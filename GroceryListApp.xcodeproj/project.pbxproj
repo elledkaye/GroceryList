@@ -94,9 +94,10 @@
 		EF2C845A2C6B979600C7BE58 /* GroceryListApp */ = {
 			isa = PBXGroup;
 			children = (
-				EF2C845B2C6B979600C7BE58 /* GroceryListAppApp.swift */,
-				EF2C845D2C6B979600C7BE58 /* ContentView.swift */,
-				EF2C845F2C6B979700C7BE58 /* Assets.xcassets */,
+				EF2C84882C6B9ADF00C7BE58 /* Other */,
+				EF2C84872C6B9AD400C7BE58 /* Models */,
+				EF2C84862C6B9AAB00C7BE58 /* ViewModels */,
+				EF2C84852C6B9A9B00C7BE58 /* Views */,
 				EF2C84612C6B979700C7BE58 /* Preview Content */,
 			);
 			path = GroceryListApp;
@@ -125,6 +126,37 @@
 				EF2C84782C6B979800C7BE58 /* GroceryListAppUITestsLaunchTests.swift */,
 			);
 			path = GroceryListAppUITests;
+			sourceTree = "<group>";
+		};
+		EF2C84852C6B9A9B00C7BE58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF2C845D2C6B979600C7BE58 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF2C84862C6B9AAB00C7BE58 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EF2C84872C6B9AD400C7BE58 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF2C84882C6B9ADF00C7BE58 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EF2C845B2C6B979600C7BE58 /* GroceryListAppApp.swift */,
+				EF2C845F2C6B979700C7BE58 /* Assets.xcassets */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
