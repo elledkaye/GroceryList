@@ -14,6 +14,9 @@
 		EF2C846D2C6B979800C7BE58 /* GroceryListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C846C2C6B979800C7BE58 /* GroceryListAppTests.swift */; };
 		EF2C84772C6B979800C7BE58 /* GroceryListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84762C6B979800C7BE58 /* GroceryListAppUITests.swift */; };
 		EF2C84792C6B979800C7BE58 /* GroceryListAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84782C6B979800C7BE58 /* GroceryListAppUITestsLaunchTests.swift */; };
+		EF2C848A2C6E2AD700C7BE58 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84892C6E2AD700C7BE58 /* LoginView.swift */; };
+		EF2C848C2C6E34C500C7BE58 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C848B2C6E34C500C7BE58 /* LoginViewModel.swift */; };
+		EF2C848E2C6E34DF00C7BE58 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C848D2C6E34DF00C7BE58 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		EF2C84722C6B979800C7BE58 /* GroceryListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroceryListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2C84762C6B979800C7BE58 /* GroceryListAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListAppUITests.swift; sourceTree = "<group>"; };
 		EF2C84782C6B979800C7BE58 /* GroceryListAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EF2C84892C6E2AD700C7BE58 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EF2C848B2C6E34C500C7BE58 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		EF2C848D2C6E34DF00C7BE58 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				EF2C845D2C6B979600C7BE58 /* ContentView.swift */,
+				EF2C84892C6E2AD700C7BE58 /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -139,6 +146,8 @@
 		EF2C84862C6B9AAB00C7BE58 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				EF2C848B2C6E34C500C7BE58 /* LoginViewModel.swift */,
+				EF2C848D2C6E34DF00C7BE58 /* ContentViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -289,8 +298,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2C848C2C6E34C500C7BE58 /* LoginViewModel.swift in Sources */,
+				EF2C848A2C6E2AD700C7BE58 /* LoginView.swift in Sources */,
 				EF2C845E2C6B979600C7BE58 /* ContentView.swift in Sources */,
 				EF2C845C2C6B979600C7BE58 /* GroceryListAppApp.swift in Sources */,
+				EF2C848E2C6E34DF00C7BE58 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
