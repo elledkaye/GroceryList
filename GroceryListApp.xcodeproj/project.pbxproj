@@ -17,6 +17,11 @@
 		EF2C848A2C6E2AD700C7BE58 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84892C6E2AD700C7BE58 /* LoginView.swift */; };
 		EF2C848C2C6E34C500C7BE58 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C848B2C6E34C500C7BE58 /* LoginViewModel.swift */; };
 		EF2C848E2C6E34DF00C7BE58 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C848D2C6E34DF00C7BE58 /* ContentViewModel.swift */; };
+		EF2C84902C6E395E00C7BE58 /* GroceryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C848F2C6E395E00C7BE58 /* GroceryListView.swift */; };
+		EF2C84922C6E396B00C7BE58 /* GroceryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84912C6E396B00C7BE58 /* GroceryListViewModel.swift */; };
+		EF2C84942C6E398400C7BE58 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84932C6E398400C7BE58 /* RegisterView.swift */; };
+		EF2C84962C6E398F00C7BE58 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84952C6E398F00C7BE58 /* RegisterViewModel.swift */; };
+		EF2C84982C6E39AB00C7BE58 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84972C6E39AB00C7BE58 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,11 @@
 		EF2C84892C6E2AD700C7BE58 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EF2C848B2C6E34C500C7BE58 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		EF2C848D2C6E34DF00C7BE58 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		EF2C848F2C6E395E00C7BE58 /* GroceryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListView.swift; sourceTree = "<group>"; };
+		EF2C84912C6E396B00C7BE58 /* GroceryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListViewModel.swift; sourceTree = "<group>"; };
+		EF2C84932C6E398400C7BE58 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		EF2C84952C6E398F00C7BE58 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		EF2C84972C6E39AB00C7BE58 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +148,10 @@
 			isa = PBXGroup;
 			children = (
 				EF2C845D2C6B979600C7BE58 /* ContentView.swift */,
+				EF2C84932C6E398400C7BE58 /* RegisterView.swift */,
 				EF2C84892C6E2AD700C7BE58 /* LoginView.swift */,
+				EF2C848F2C6E395E00C7BE58 /* GroceryListView.swift */,
+				EF2C84972C6E39AB00C7BE58 /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -147,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				EF2C848B2C6E34C500C7BE58 /* LoginViewModel.swift */,
+				EF2C84952C6E398F00C7BE58 /* RegisterViewModel.swift */,
+				EF2C84912C6E396B00C7BE58 /* GroceryListViewModel.swift */,
 				EF2C848D2C6E34DF00C7BE58 /* ContentViewModel.swift */,
 			);
 			path = ViewModels;
@@ -300,8 +315,13 @@
 			files = (
 				EF2C848C2C6E34C500C7BE58 /* LoginViewModel.swift in Sources */,
 				EF2C848A2C6E2AD700C7BE58 /* LoginView.swift in Sources */,
+				EF2C84902C6E395E00C7BE58 /* GroceryListView.swift in Sources */,
+				EF2C84922C6E396B00C7BE58 /* GroceryListViewModel.swift in Sources */,
 				EF2C845E2C6B979600C7BE58 /* ContentView.swift in Sources */,
+				EF2C84982C6E39AB00C7BE58 /* HeaderView.swift in Sources */,
+				EF2C84942C6E398400C7BE58 /* RegisterView.swift in Sources */,
 				EF2C845C2C6B979600C7BE58 /* GroceryListAppApp.swift in Sources */,
+				EF2C84962C6E398F00C7BE58 /* RegisterViewModel.swift in Sources */,
 				EF2C848E2C6E34DF00C7BE58 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
