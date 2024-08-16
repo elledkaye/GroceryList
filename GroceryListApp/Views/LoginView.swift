@@ -1,10 +1,3 @@
-//
-//  LoginView.swift
-//  GroceryListApp
-//
-//  Created by Danielle Kaye on 8/15/24.
-//
-
 import SwiftUI
 
 struct LoginView: View {
@@ -13,19 +6,25 @@ struct LoginView: View {
     var body: some View {
         NavigationView{
             VStack{
-                Text("This is the login view")
-                // Header goes here
+                
+                // Header
+                HeaderView(title: "Grocery List", subtitle: "Your shopping helper", background: Color.green)
                 
                 Form{
+                    // Binding email address to email in the LoginViewModel
                     TextField("Email Address", text: $viewModel.email)
                     
+                    // Binding password to password in the LoginViewModel
                     SecureField("Password", text: $viewModel.password)
                     
-                }
+                } // End of Form
                 
-            }
+                .padding(.bottom)
+                
+            } // End of VStack
             
         } // End of NavigationView
+        .padding(.bottom)
     }
 }
 

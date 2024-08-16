@@ -1,10 +1,5 @@
-//
-//  HeaderView.swift
-//  GroceryListApp
-//
-//
 /*
- Reusable header view that can be used and modiied across all other views
+ Reusable header view that can be used and modiied across other views
  */
 
 import SwiftUI
@@ -26,9 +21,11 @@ struct HeaderView: View {
                 VStack{
                     Text(title)
                         .font(.system(size: 50))
+                        .foregroundStyle(Color.white)
                         .bold()
                     Text(subtitle)
                         .font(.system(size: 30))
+                        .foregroundStyle(Color.white)
                     
                     
                 } // End of innter VStack

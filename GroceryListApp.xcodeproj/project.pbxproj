@@ -22,6 +22,7 @@
 		EF2C84942C6E398400C7BE58 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84932C6E398400C7BE58 /* RegisterView.swift */; };
 		EF2C84962C6E398F00C7BE58 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84952C6E398F00C7BE58 /* RegisterViewModel.swift */; };
 		EF2C84982C6E39AB00C7BE58 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84972C6E39AB00C7BE58 /* HeaderView.swift */; };
+		EF2C849A2C6F7E1D00C7BE58 /* GLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84992C6F7E1D00C7BE58 /* GLButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		EF2C84932C6E398400C7BE58 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		EF2C84952C6E398F00C7BE58 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		EF2C84972C6E39AB00C7BE58 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		EF2C84992C6F7E1D00C7BE58 /* GLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				EF2C84892C6E2AD700C7BE58 /* LoginView.swift */,
 				EF2C848F2C6E395E00C7BE58 /* GroceryListView.swift */,
 				EF2C84972C6E39AB00C7BE58 /* HeaderView.swift */,
+				EF2C84992C6F7E1D00C7BE58 /* GLButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				EF2C84982C6E39AB00C7BE58 /* HeaderView.swift in Sources */,
 				EF2C84942C6E398400C7BE58 /* RegisterView.swift in Sources */,
 				EF2C845C2C6B979600C7BE58 /* GroceryListAppApp.swift in Sources */,
+				EF2C849A2C6F7E1D00C7BE58 /* GLButton.swift in Sources */,
 				EF2C84962C6E398F00C7BE58 /* RegisterViewModel.swift in Sources */,
 				EF2C848E2C6E34DF00C7BE58 /* ContentViewModel.swift in Sources */,
 			);
