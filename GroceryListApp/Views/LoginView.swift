@@ -22,9 +22,10 @@ struct LoginView: View {
                         // Action of logging in goes here
                     }
             
-                    .padding()
-                 
+                    .padding() // Padding for button
+                    
                 } // End of Form
+                .border(Color.black, width:3) // REMOVE
           
                 VStack{
                     Text("Not a member")
@@ -32,6 +33,7 @@ struct LoginView: View {
                 .padding(.bottom, 60)
              
             } // End of VStack
+            .border(Color.black, width:3)// REMOVE
             
         } // End of NavigationView
         .padding(.bottom)
