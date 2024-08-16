@@ -20,6 +20,8 @@ struct GLButton: View {
             }
             
         }
+        
+        .padding()
     }
 }
 

@@ -17,10 +17,20 @@ struct LoginView: View {
                     // Binding password to password in the LoginViewModel
                     SecureField("Password", text: $viewModel.password)
                     
+                    
+                    GLButton(title: "Login", background: Color.green){
+                        // Action of logging in goes here
+                    }
+            
+                    .padding()
+                 
                 } // End of Form
-                
-                .padding(.bottom)
-                
+          
+                VStack{
+                    Text("Not a member")
+                }
+                .padding(.bottom, 60)
+             
             } // End of VStack
             
         } // End of NavigationView
