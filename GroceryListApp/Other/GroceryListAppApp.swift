@@ -1,17 +1,15 @@
-//
-//  GroceryListAppApp.swift
-//  GroceryListApp
-//
-//  Created by Danielle Kaye on 8/13/24.
-//
-
+import FirebaseCore
 import SwiftUI
 
 @main
 struct GroceryListAppApp: App {
+    init(){
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+        ContentView()
         }
     }
 }

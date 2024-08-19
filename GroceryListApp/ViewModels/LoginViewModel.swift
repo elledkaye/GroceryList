@@ -1,9 +1,3 @@
-//
-//  LoginViewModel.swift
-//  GroceryListApp
-//
-//
-//
 /*
  Reminder: ViewModel envapsulates presentation login and state.
  ViewModels contain the business logic and handle data transformations need for the
@@ -22,6 +16,8 @@ class LoginViewModel: ObservableObject{
     @Published var password = ""
     
     init(){}
-
     
+    
+
+
 }

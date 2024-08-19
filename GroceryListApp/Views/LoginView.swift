@@ -9,7 +9,10 @@ struct LoginView: View {
                 
                 // Header
                 HeaderView(title: "Grocery List", subtitle: "Your shopping helper", background: Color.green)
+                    .offset(y: 70)
                 
+                Text("Image can go here")
+                    
                 Form{
                     // Binding email address to email in the LoginViewModel
                     TextField("Email Address", text: $viewModel.email)
@@ -28,12 +31,15 @@ struct LoginView: View {
                 .border(Color.black, width:3) // REMOVE
           
                 VStack{
-                    Text("Not a member")
+                    Text("Need Help?")
+                    NavigationLink("Create an account", destination: RegisterView())
+                    NavigationLink("Forgot Password", destination: RegisterView())
+                    
                 }
                 .padding(.bottom, 60)
              
             } // End of VStack
-            .border(Color.black, width:3)// REMOVE
+            .border(Color.blue, width:3)// REMOVE
             
         } // End of NavigationView
         .padding(.bottom)
