@@ -6,7 +6,6 @@ struct LoginView: View {
     var body: some View {
         NavigationView{
             VStack{
-                
                 // Header
                 HeaderView(title: "Grocery List", subtitle: "Your shopping helper", background: Color.green)
                     .offset(y: 70)
@@ -14,6 +13,12 @@ struct LoginView: View {
                 Text("Image can go here")
                     
                 Form{
+                    
+                    if !viewModel.errorMessage.isEmpty{
+                        Text(viewModel.errorMessage)
+                            .foregroundColor(Color.red)
+                    }
+                    
                     // Binding email address to email in the LoginViewModel
                     TextField("Email Address", text: $viewModel.email)
                     
@@ -23,6 +28,7 @@ struct LoginView: View {
                     
                     GLButton(title: "Login", background: Color.green){
                         // Action of logging in goes here
+                        viewModel.login()
                     }
             
                     .padding() // Padding for button
