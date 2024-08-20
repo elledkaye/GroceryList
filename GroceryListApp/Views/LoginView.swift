@@ -42,7 +42,7 @@ struct LoginView: View {
                     NavigationLink("Forgot Password", destination: RegisterView())
                     
                 }
-                .padding(.bottom, 60)
+                .padding(.bottom)
              
             } // End of VStack
             .border(Color.blue, width:3)// REMOVE

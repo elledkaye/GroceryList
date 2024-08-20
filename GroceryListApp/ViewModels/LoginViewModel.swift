@@ -21,69 +21,71 @@ class LoginViewModel: ObservableObject{
     
     init(){}
     
+ 
+    
     func login(){
-        guard validate() else{
+        if email.trimmingCharacters(in: .whitespaces).isEmpty && password.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            errorMessage = "please enter both email and password"
             return
         }
         
-    }// End of login()
+        guard validateEmail() else{
+            return
+            
+        }
+        
+        guard validatePassword() else{
+            return
+        }
+        
+        
+    }
+   
+// Using guard statements to validate users input in email and password
     
-    
-    // Creating a private function called validate()
-    // We are expecting it to return a function
-    // If email input is empty or password is empty fill in fields
-    // If email is formatted incorrectly show error message
-    // Should break this function up one to validate email and one to validate password
-    private func validate() -> Bool{
+    // Validate email
+    func validateEmail() -> Bool{
         errorMessage = ""
         
-        
-        // If email and password are NOT empty then return true
-        // Else check if password field is entered
-        // Else check if email has been entered in
-        // NOTE: trimmingCharacters(in: ) is a method of the string class
-        if !email.trimmingCharacters(in: .whitespaces).isEmpty && !password.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty{
+        // guard will return true if email is not empty after removing any whitespaces return false
+        // NOTE trimmpingCharacters(in: ) is a method in swift
+        guard !email.trimmingCharacters(in: .whitespaces).isEmpty else{
             
-           return true
-            
-            
-        }else if !email.trimmingCharacters(in: .whitespaces).isEmpty && password.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty{
-            
-            
-            errorMessage = "Please enter password"
-            return false
-            
-            
-        }else if email.trimmingCharacters(in: .whitespaces).isEmpty && !password.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty{
-            
-            errorMessage = "Please enter email"
-            return false
-            
-        }else{
-            
-            errorMessage = "Please enter all fields"
-            return false
-            
-            
-        }// End of if/else block
-        
-        
-        // Email validation
-        guard email.contains("@") && email.contains(".") else{
-            
-            errorMessage = " Please enter a valid email"
             return false
         }
         
-        // Password validation
-    
+        // guard will return true if email contains both a "@" and a "."
+        guard email.contains("@") && email.contains(".")else{
+            errorMessage = "Please enter valid email"
+            return false
+            
+        }
         
-       
+        return true
         
-    }
+        
+    }// End of validateEmail
     
     
     
-
+    // Function validatePassowrd)
+    func validatePassword() -> Bool{
+        errorMessage = ""
+        
+        guard !password.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else{
+            errorMessage = "Please enter password"
+            return false
+            
+        }
+        
+        
+        guard password.count >= 8 else {
+            errorMessage = "Please enter a valid password"
+            return false
+        }
+        
+        return true
+        
+    }// End of validatePassword()
 
 }
