@@ -14,6 +14,8 @@ class RegisterViewModel: ObservableObject{
     
     
     func register(){
+        errorMessage = ""
+        
         if name.trimmingCharacters(in: .whitespaces).isEmpty &&
             email.trimmingCharacters(in: .whitespaces).isEmpty && password.trimmingCharacters(in:.whitespacesAndNewlines).isEmpty{
             
@@ -24,15 +26,15 @@ class RegisterViewModel: ObservableObject{
         }
         
         
-        guard validateName() else{
+        if !validateName(){
+          return
+        }
+        
+       if !validateEmail(){
             return
         }
         
-        guard validateEmail() else{
-            return
-        }
-        
-        guard validatePassword() else{
+     if !validatePassword(){
             return
             
         }
@@ -42,18 +44,11 @@ class RegisterViewModel: ObservableObject{
     
     // Validate name
     func validateName() -> Bool{
-        guard !name.trimmingCharacters(in: .whitespaces).isEmpty else{
-            
-            return false
-            
-        }
-        
-        guard name.count >= 3 else{
+       if name.trimmingCharacters(in: .whitespaces).isEmpty || name.count < 3{
             errorMessage = "Please enter a valid name"
             return false
             
         }
-        
         return true
         
     }
@@ -61,16 +56,9 @@ class RegisterViewModel: ObservableObject{
     
     // Validate email
     func validateEmail() -> Bool{
-        guard !email.trimmingCharacters(in: .whitespaces).isEmpty else{
+        if email.trimmingCharacters(in: .whitespaces).isEmpty || !email.contains("@") || !email.contains("."){
+            errorMessage = "Please enter a valid email"
             return false
-        }
-        
-        
-        // Add regex
-        guard email.contains("@") && email.contains(".")else{
-            errorMessage = "Please enter valid email"
-            return false
-            
         }
         
         return true
@@ -79,18 +67,12 @@ class RegisterViewModel: ObservableObject{
     
     // Validate password
     func validatePassword() -> Bool{
-        guard !password.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else{
+        if password.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || password.count < 8 {
+            errorMessage = "Please enter in a valid password"
             return false
             
         }
         
-        // Add regex
-        guard password.count >= 8 else{
-            errorMessage = "Please enter in a password with 8 or more characters"
-            return false
-            
-            
-        }
         
         return true
         

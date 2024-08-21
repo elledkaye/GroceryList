@@ -12,7 +12,14 @@ struct RegisterView: View {
                     .offset(y:70)
                 
                 
+                
                 Form{
+                    
+                    // Form error message
+                    if !viewModel.errorMessage.isEmpty{
+                        Text(viewModel.errorMessage)
+                            .foregroundColor(Color.red)
+                    }
                     
                     TextField("Name", text: $viewModel.name)
                     TextField("Email", text: $viewModel.email)
@@ -22,7 +29,7 @@ struct RegisterView: View {
                     // Use reusable button
                     GLButton(title: "Register", background: Color.green){
                         
-                        // Register action will go here
+                        viewModel.register()
                         
                     }
                     
