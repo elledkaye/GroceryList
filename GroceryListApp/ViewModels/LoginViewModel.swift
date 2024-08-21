@@ -8,6 +8,7 @@
  Relationship w/Views: ViewModels communicate w/views through bindings.
  */
 
+import FirebaseAuth
 import Foundation
 
 
@@ -38,6 +39,8 @@ class LoginViewModel: ObservableObject{
             return
         }
         
+        // Try to log in
+        Auth.auth().signIn(withEmail: email, password: password) // Reference to firebase authentication
         
     }
    
