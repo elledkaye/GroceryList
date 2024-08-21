@@ -21,9 +21,15 @@ struct GLButton: View {
             
         }
         
-        .padding()
+        //.padding()
+        .padding(EdgeInsets(top: 12, leading: 24, bottom: 12, trailing: 24))
+        .font(.system(.title2, design: .rounded, weight: .bold))
+        .background(Capsule().stroke(.green, lineWidth:2))
     }
+    
+   
 }
+
 
 #Preview {
     GLButton(title: "Value", background: Color.green){
