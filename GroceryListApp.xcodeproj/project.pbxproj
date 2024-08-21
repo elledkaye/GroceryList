@@ -26,6 +26,8 @@
 		EF2C849D2C73CE0100C7BE58 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EF2C849C2C73CE0100C7BE58 /* FirebaseAuth */; };
 		EF2C849F2C73CE0100C7BE58 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EF2C849E2C73CE0100C7BE58 /* FirebaseFirestore */; };
 		EF2C84A52C73D1A600C7BE58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF2C84A42C73D1A600C7BE58 /* GoogleService-Info.plist */; };
+		EF2C84A72C76552400C7BE58 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84A62C76552400C7BE58 /* User.swift */; };
+		EF2C84A92C7655A900C7BE58 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84A82C7655A900C7BE58 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		EF2C84972C6E39AB00C7BE58 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		EF2C84992C6F7E1D00C7BE58 /* GLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLButton.swift; sourceTree = "<group>"; };
 		EF2C84A42C73D1A600C7BE58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EF2C84A62C76552400C7BE58 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EF2C84A82C7655A900C7BE58 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,7 @@
 		EF2C84872C6B9AD400C7BE58 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EF2C84A62C76552400C7BE58 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 				EF2C84A42C73D1A600C7BE58 /* GoogleService-Info.plist */,
 				EF2C845B2C6B979600C7BE58 /* GroceryListAppApp.swift */,
 				EF2C845F2C6B979700C7BE58 /* Assets.xcassets */,
+				EF2C84A82C7655A900C7BE58 /* Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -339,6 +345,8 @@
 				EF2C84982C6E39AB00C7BE58 /* HeaderView.swift in Sources */,
 				EF2C84942C6E398400C7BE58 /* RegisterView.swift in Sources */,
 				EF2C845C2C6B979600C7BE58 /* GroceryListAppApp.swift in Sources */,
+				EF2C84A92C7655A900C7BE58 /* Extensions.swift in Sources */,
+				EF2C84A72C76552400C7BE58 /* User.swift in Sources */,
 				EF2C849A2C6F7E1D00C7BE58 /* GLButton.swift in Sources */,
 				EF2C84962C6E398F00C7BE58 /* RegisterViewModel.swift in Sources */,
 				EF2C848E2C6E34DF00C7BE58 /* ContentViewModel.swift in Sources */,
