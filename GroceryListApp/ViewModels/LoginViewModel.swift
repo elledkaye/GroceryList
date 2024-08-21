@@ -26,7 +26,7 @@ class LoginViewModel: ObservableObject{
     
     func login(){
         if email.trimmingCharacters(in: .whitespaces).isEmpty && password.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-            errorMessage = "please enter both email and password"
+            errorMessage = "Please enter email and password"
             return
         }
         

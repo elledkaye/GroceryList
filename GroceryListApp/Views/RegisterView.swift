@@ -9,6 +9,7 @@ struct RegisterView: View {
             VStack{
                 // Using reusable headerView
                 HeaderView(title: "Register", subtitle: "Your account", background: Color.green)
+                    .offset(y:70)
                 
                 
                 Form{
@@ -25,7 +26,7 @@ struct RegisterView: View {
                         
                     }
                     
-                    
+                    .padding()
                 }
                 
                 
