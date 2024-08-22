@@ -14,6 +14,23 @@
 		EF2C846D2C6B979800C7BE58 /* GroceryListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C846C2C6B979800C7BE58 /* GroceryListAppTests.swift */; };
 		EF2C84772C6B979800C7BE58 /* GroceryListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84762C6B979800C7BE58 /* GroceryListAppUITests.swift */; };
 		EF2C84792C6B979800C7BE58 /* GroceryListAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84782C6B979800C7BE58 /* GroceryListAppUITestsLaunchTests.swift */; };
+		EF2C848A2C6E2AD700C7BE58 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84892C6E2AD700C7BE58 /* LoginScreen.swift */; };
+		EF2C848C2C6E34C500C7BE58 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C848B2C6E34C500C7BE58 /* LoginViewModel.swift */; };
+		EF2C848E2C6E34DF00C7BE58 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C848D2C6E34DF00C7BE58 /* ContentViewModel.swift */; };
+		EF2C84902C6E395E00C7BE58 /* GroceryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C848F2C6E395E00C7BE58 /* GroceryListView.swift */; };
+		EF2C84922C6E396B00C7BE58 /* GroceryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84912C6E396B00C7BE58 /* GroceryListViewModel.swift */; };
+		EF2C84942C6E398400C7BE58 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84932C6E398400C7BE58 /* RegisterView.swift */; };
+		EF2C84962C6E398F00C7BE58 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84952C6E398F00C7BE58 /* RegisterViewModel.swift */; };
+		EF2C84982C6E39AB00C7BE58 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84972C6E39AB00C7BE58 /* HeaderView.swift */; };
+		EF2C849A2C6F7E1D00C7BE58 /* GLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84992C6F7E1D00C7BE58 /* GLButton.swift */; };
+		EF2C849D2C73CE0100C7BE58 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EF2C849C2C73CE0100C7BE58 /* FirebaseAuth */; };
+		EF2C849F2C73CE0100C7BE58 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EF2C849E2C73CE0100C7BE58 /* FirebaseFirestore */; };
+		EF2C84A52C73D1A600C7BE58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF2C84A42C73D1A600C7BE58 /* GoogleService-Info.plist */; };
+		EF2C84A72C76552400C7BE58 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84A62C76552400C7BE58 /* User.swift */; };
+		EF2C84A92C7655A900C7BE58 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84A82C7655A900C7BE58 /* Extensions.swift */; };
+		EF2C84AB2C777A7600C7BE58 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84AA2C777A7600C7BE58 /* HomeView.swift */; };
+		EF2C84AD2C777A8700C7BE58 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84AC2C777A8700C7BE58 /* HomeViewModel.swift */; };
+		EF2C84AF2C777D6C00C7BE58 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84AE2C777D6C00C7BE58 /* SettingsScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +61,21 @@
 		EF2C84722C6B979800C7BE58 /* GroceryListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroceryListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2C84762C6B979800C7BE58 /* GroceryListAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListAppUITests.swift; sourceTree = "<group>"; };
 		EF2C84782C6B979800C7BE58 /* GroceryListAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EF2C84892C6E2AD700C7BE58 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		EF2C848B2C6E34C500C7BE58 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		EF2C848D2C6E34DF00C7BE58 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		EF2C848F2C6E395E00C7BE58 /* GroceryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListView.swift; sourceTree = "<group>"; };
+		EF2C84912C6E396B00C7BE58 /* GroceryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListViewModel.swift; sourceTree = "<group>"; };
+		EF2C84932C6E398400C7BE58 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		EF2C84952C6E398F00C7BE58 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		EF2C84972C6E39AB00C7BE58 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		EF2C84992C6F7E1D00C7BE58 /* GLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLButton.swift; sourceTree = "<group>"; };
+		EF2C84A42C73D1A600C7BE58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EF2C84A62C76552400C7BE58 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EF2C84A82C7655A900C7BE58 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EF2C84AA2C777A7600C7BE58 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EF2C84AC2C777A8700C7BE58 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EF2C84AE2C777D6C00C7BE58 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2C849D2C73CE0100C7BE58 /* FirebaseAuth in Frameworks */,
+				EF2C849F2C73CE0100C7BE58 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,9 +128,10 @@
 		EF2C845A2C6B979600C7BE58 /* GroceryListApp */ = {
 			isa = PBXGroup;
 			children = (
-				EF2C845B2C6B979600C7BE58 /* GroceryListAppApp.swift */,
-				EF2C845D2C6B979600C7BE58 /* ContentView.swift */,
-				EF2C845F2C6B979700C7BE58 /* Assets.xcassets */,
+				EF2C84882C6B9ADF00C7BE58 /* Other */,
+				EF2C84872C6B9AD400C7BE58 /* Models */,
+				EF2C84862C6B9AAB00C7BE58 /* ViewModels */,
+				EF2C84852C6B9A9B00C7BE58 /* Views */,
 				EF2C84612C6B979700C7BE58 /* Preview Content */,
 			);
 			path = GroceryListApp;
@@ -127,6 +162,52 @@
 			path = GroceryListAppUITests;
 			sourceTree = "<group>";
 		};
+		EF2C84852C6B9A9B00C7BE58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF2C845D2C6B979600C7BE58 /* ContentView.swift */,
+				EF2C84932C6E398400C7BE58 /* RegisterView.swift */,
+				EF2C84892C6E2AD700C7BE58 /* LoginScreen.swift */,
+				EF2C848F2C6E395E00C7BE58 /* GroceryListView.swift */,
+				EF2C84972C6E39AB00C7BE58 /* HeaderView.swift */,
+				EF2C84992C6F7E1D00C7BE58 /* GLButton.swift */,
+				EF2C84AA2C777A7600C7BE58 /* HomeView.swift */,
+				EF2C84AE2C777D6C00C7BE58 /* SettingsScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF2C84862C6B9AAB00C7BE58 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EF2C848B2C6E34C500C7BE58 /* LoginViewModel.swift */,
+				EF2C84952C6E398F00C7BE58 /* RegisterViewModel.swift */,
+				EF2C84912C6E396B00C7BE58 /* GroceryListViewModel.swift */,
+				EF2C848D2C6E34DF00C7BE58 /* ContentViewModel.swift */,
+				EF2C84AC2C777A8700C7BE58 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EF2C84872C6B9AD400C7BE58 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF2C84A62C76552400C7BE58 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF2C84882C6B9ADF00C7BE58 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EF2C84A42C73D1A600C7BE58 /* GoogleService-Info.plist */,
+				EF2C845B2C6B979600C7BE58 /* GroceryListAppApp.swift */,
+				EF2C845F2C6B979700C7BE58 /* Assets.xcassets */,
+				EF2C84A82C7655A900C7BE58 /* Extensions.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +224,10 @@
 			dependencies = (
 			);
 			name = GroceryListApp;
+			packageProductDependencies = (
+				EF2C849C2C73CE0100C7BE58 /* FirebaseAuth */,
+				EF2C849E2C73CE0100C7BE58 /* FirebaseFirestore */,
+			);
 			productName = GroceryListApp;
 			productReference = EF2C84582C6B979600C7BE58 /* GroceryListApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +300,9 @@
 				Base,
 			);
 			mainGroup = EF2C844F2C6B979600C7BE58;
+			packageReferences = (
+				EF2C849B2C73CE0100C7BE58 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = EF2C84592C6B979600C7BE58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +321,7 @@
 			files = (
 				EF2C84632C6B979700C7BE58 /* Preview Assets.xcassets in Resources */,
 				EF2C84602C6B979700C7BE58 /* Assets.xcassets in Resources */,
+				EF2C84A52C73D1A600C7BE58 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +346,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2C84AF2C777D6C00C7BE58 /* SettingsScreen.swift in Sources */,
+				EF2C848C2C6E34C500C7BE58 /* LoginViewModel.swift in Sources */,
+				EF2C84AB2C777A7600C7BE58 /* HomeView.swift in Sources */,
+				EF2C848A2C6E2AD700C7BE58 /* LoginScreen.swift in Sources */,
+				EF2C84902C6E395E00C7BE58 /* GroceryListView.swift in Sources */,
+				EF2C84922C6E396B00C7BE58 /* GroceryListViewModel.swift in Sources */,
 				EF2C845E2C6B979600C7BE58 /* ContentView.swift in Sources */,
+				EF2C84982C6E39AB00C7BE58 /* HeaderView.swift in Sources */,
+				EF2C84942C6E398400C7BE58 /* RegisterView.swift in Sources */,
 				EF2C845C2C6B979600C7BE58 /* GroceryListAppApp.swift in Sources */,
+				EF2C84A92C7655A900C7BE58 /* Extensions.swift in Sources */,
+				EF2C84A72C76552400C7BE58 /* User.swift in Sources */,
+				EF2C849A2C6F7E1D00C7BE58 /* GLButton.swift in Sources */,
+				EF2C84962C6E398F00C7BE58 /* RegisterViewModel.swift in Sources */,
+				EF2C84AD2C777A8700C7BE58 /* HomeViewModel.swift in Sources */,
+				EF2C848E2C6E34DF00C7BE58 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +527,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GroceryListApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Grocery List";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,6 +556,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GroceryListApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Grocery List";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -582,6 +687,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EF2C849B2C73CE0100C7BE58 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF2C849C2C73CE0100C7BE58 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF2C849B2C73CE0100C7BE58 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		EF2C849E2C73CE0100C7BE58 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF2C849B2C73CE0100C7BE58 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EF2C84502C6B979600C7BE58 /* Project object */;
 }
