@@ -14,7 +14,7 @@
 		EF2C846D2C6B979800C7BE58 /* GroceryListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C846C2C6B979800C7BE58 /* GroceryListAppTests.swift */; };
 		EF2C84772C6B979800C7BE58 /* GroceryListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84762C6B979800C7BE58 /* GroceryListAppUITests.swift */; };
 		EF2C84792C6B979800C7BE58 /* GroceryListAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84782C6B979800C7BE58 /* GroceryListAppUITestsLaunchTests.swift */; };
-		EF2C848A2C6E2AD700C7BE58 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84892C6E2AD700C7BE58 /* LoginView.swift */; };
+		EF2C848A2C6E2AD700C7BE58 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84892C6E2AD700C7BE58 /* LoginScreen.swift */; };
 		EF2C848C2C6E34C500C7BE58 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C848B2C6E34C500C7BE58 /* LoginViewModel.swift */; };
 		EF2C848E2C6E34DF00C7BE58 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C848D2C6E34DF00C7BE58 /* ContentViewModel.swift */; };
 		EF2C84902C6E395E00C7BE58 /* GroceryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C848F2C6E395E00C7BE58 /* GroceryListView.swift */; };
@@ -28,6 +28,9 @@
 		EF2C84A52C73D1A600C7BE58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF2C84A42C73D1A600C7BE58 /* GoogleService-Info.plist */; };
 		EF2C84A72C76552400C7BE58 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84A62C76552400C7BE58 /* User.swift */; };
 		EF2C84A92C7655A900C7BE58 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84A82C7655A900C7BE58 /* Extensions.swift */; };
+		EF2C84AB2C777A7600C7BE58 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84AA2C777A7600C7BE58 /* HomeView.swift */; };
+		EF2C84AD2C777A8700C7BE58 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84AC2C777A8700C7BE58 /* HomeViewModel.swift */; };
+		EF2C84AF2C777D6C00C7BE58 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84AE2C777D6C00C7BE58 /* SettingsScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +61,7 @@
 		EF2C84722C6B979800C7BE58 /* GroceryListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroceryListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2C84762C6B979800C7BE58 /* GroceryListAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListAppUITests.swift; sourceTree = "<group>"; };
 		EF2C84782C6B979800C7BE58 /* GroceryListAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		EF2C84892C6E2AD700C7BE58 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EF2C84892C6E2AD700C7BE58 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		EF2C848B2C6E34C500C7BE58 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		EF2C848D2C6E34DF00C7BE58 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		EF2C848F2C6E395E00C7BE58 /* GroceryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListView.swift; sourceTree = "<group>"; };
@@ -70,6 +73,9 @@
 		EF2C84A42C73D1A600C7BE58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EF2C84A62C76552400C7BE58 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EF2C84A82C7655A900C7BE58 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EF2C84AA2C777A7600C7BE58 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EF2C84AC2C777A8700C7BE58 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EF2C84AE2C777D6C00C7BE58 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,10 +167,12 @@
 			children = (
 				EF2C845D2C6B979600C7BE58 /* ContentView.swift */,
 				EF2C84932C6E398400C7BE58 /* RegisterView.swift */,
-				EF2C84892C6E2AD700C7BE58 /* LoginView.swift */,
+				EF2C84892C6E2AD700C7BE58 /* LoginScreen.swift */,
 				EF2C848F2C6E395E00C7BE58 /* GroceryListView.swift */,
 				EF2C84972C6E39AB00C7BE58 /* HeaderView.swift */,
 				EF2C84992C6F7E1D00C7BE58 /* GLButton.swift */,
+				EF2C84AA2C777A7600C7BE58 /* HomeView.swift */,
+				EF2C84AE2C777D6C00C7BE58 /* SettingsScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,6 +184,7 @@
 				EF2C84952C6E398F00C7BE58 /* RegisterViewModel.swift */,
 				EF2C84912C6E396B00C7BE58 /* GroceryListViewModel.swift */,
 				EF2C848D2C6E34DF00C7BE58 /* ContentViewModel.swift */,
+				EF2C84AC2C777A8700C7BE58 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -337,8 +346,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2C84AF2C777D6C00C7BE58 /* SettingsScreen.swift in Sources */,
 				EF2C848C2C6E34C500C7BE58 /* LoginViewModel.swift in Sources */,
-				EF2C848A2C6E2AD700C7BE58 /* LoginView.swift in Sources */,
+				EF2C84AB2C777A7600C7BE58 /* HomeView.swift in Sources */,
+				EF2C848A2C6E2AD700C7BE58 /* LoginScreen.swift in Sources */,
 				EF2C84902C6E395E00C7BE58 /* GroceryListView.swift in Sources */,
 				EF2C84922C6E396B00C7BE58 /* GroceryListViewModel.swift in Sources */,
 				EF2C845E2C6B979600C7BE58 /* ContentView.swift in Sources */,
@@ -349,6 +360,7 @@
 				EF2C84A72C76552400C7BE58 /* User.swift in Sources */,
 				EF2C849A2C6F7E1D00C7BE58 /* GLButton.swift in Sources */,
 				EF2C84962C6E398F00C7BE58 /* RegisterViewModel.swift in Sources */,
+				EF2C84AD2C777A8700C7BE58 /* HomeViewModel.swift in Sources */,
 				EF2C848E2C6E34DF00C7BE58 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

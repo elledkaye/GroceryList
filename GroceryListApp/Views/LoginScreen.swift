@@ -1,6 +1,8 @@
 import SwiftUI
 
-struct LoginView: View {
+// Should be named loginScreen
+
+struct LoginScreen: View {
     
     @StateObject var viewModel = LoginViewModel()
     var body: some View {
@@ -34,7 +36,9 @@ struct LoginView: View {
                     .padding() // Padding for button
                     
                 } // End of Form
+                
                 .border(Color.black, width:3) // REMOVE
+                .offset(y:-50)
           
                 VStack{
                     Text("Need Help?")
@@ -53,5 +57,5 @@ struct LoginView: View {
 }
 
 #Preview {
-    LoginView()
+    LoginScreen()
 }

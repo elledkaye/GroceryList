@@ -41,7 +41,16 @@ class RegisterViewModel: ObservableObject{
             
         }
         
+    
         
+        
+    
+        
+        // Auth.auth().createUser is a method that is used to create a new user  with an email and password
+        // result: contains user data if the account creation is successful
+        // error: contains error details if something goes wrong
+        // userId if account creation is successful -> result?.user.uid provides the users unique ID
+        // the unique Id is uses to create a corresponding record in firestor
         Auth.auth().createUser(withEmail: email, password: password){[weak self] result, error in
             guard let userId = result?.user.uid else{
                 return
@@ -54,6 +63,24 @@ class RegisterViewModel: ObservableObject{
         
     } // End of register()
     
+    
+    
+    // New User object
+func insertUserRecord(id: String){
+    let newUser = User( id: id,
+                       name: name,
+                       email: email,
+                       joined: Date().timeIntervalSince1970)
+    
+    
+    let db = Firestore.firestore()
+    
+    db.collection("users")
+        .document(id)
+        .setData(newUser.asDictionary())
+    
+    
+}
     
     // Validate name
     func validateName() -> Bool{
@@ -92,22 +119,7 @@ class RegisterViewModel: ObservableObject{
     }
     
     
-        // New User object
-    func insertUserRecord(id: String){
-        let newUser = User( id: id,
-                           name: name,
-                           email: email,
-                           joined: Date().timeIntervalSince1970)
-        
-        
-        let db = Firestore.firestore()
-        
-        db.collection("users")
-            .document(id)
-            .setData(newUser.asDictionary())
-        
-        
-    }
+    
     
 
   

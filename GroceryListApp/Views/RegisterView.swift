@@ -4,14 +4,17 @@ struct RegisterView: View {
     
     // Linking the view to the viewModel
     @StateObject var viewModel = RegisterViewModel()
+    
+    
+    @State private var showingRegistrationSuccess = false
+    @State private var registrationSuccessful = false
+    
     var body: some View {
         NavigationStack{
             VStack{
                 // Using reusable headerView
                 HeaderView(title: "Register", subtitle: "Your account", background: Color.green)
                     .offset(y:70)
-                
-                
                 
                 Form{
                     
@@ -21,6 +24,7 @@ struct RegisterView: View {
                             .foregroundColor(Color.red)
                     }
                     
+                    // Display if register was successful
                     TextField("Name", text: $viewModel.name)
                     TextField("Email", text: $viewModel.email)
                     SecureField("Password", text: $viewModel.password)
@@ -35,8 +39,7 @@ struct RegisterView: View {
                     
                     .padding()
                 }
-                
-                
+                .offset(y: -50)
                 
             } // End of Vstack
             
