@@ -8,6 +8,7 @@ struct RegisterView: View {
     
     @State private var showingRegistrationSuccess = false
     @State private var registrationSuccessful = false
+    @State private var shouldNavigateToHomeScreen = false
     
     var body: some View {
         NavigationStack{
@@ -31,15 +32,31 @@ struct RegisterView: View {
                     
                     
                     // Use reusable button
-                    GLButton(title: "Register", background: Color.green){
+                    GLButton(title: "Create Account", background: Color.green){
                         
                         viewModel.register()
                         
                     }
                     
                     .padding()
+                    
+                    .alert(isPresented: $viewModel.registrationSuccessful) {
+                        Alert(title: Text("Success"),
+                              message: Text("Registration successful!"),
+                              dismissButton: .default(Text("OK"),
+                              action:{
+                            shouldNavigateToHomeScreen = true
+                        }))
+                        
+                    }
+                    
+                    
                 }
+                
                 .offset(y: -50)
+                .navigationDestination(isPresented: $shouldNavigateToHomeScreen){
+                    HomeView()
+                }
                 
             } // End of Vstack
             
