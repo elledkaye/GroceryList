@@ -3,8 +3,16 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-            .navigationBarBackButtonHidden(true)
+        TabView{
+          Text("Home")
+                .tabItem { Label("Home" , systemImage: "house")
+                    
+                    
+                }
+            
+            Text("Profile")
+                .tabItem { Label("Profile" , systemImage: "person.circle") }
+        }
     }
 }
 
