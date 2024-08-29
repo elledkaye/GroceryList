@@ -8,7 +8,7 @@ struct RegisterView: View {
     
     @State private var showingRegistrationSuccess = false
     @State private var registrationSuccessful = false
-    @State private var shouldNavigateToHomeScreen = false
+   // @State private var shouldNavigateToHomeScreen = false
     
     var body: some View {
         NavigationStack{
@@ -38,25 +38,35 @@ struct RegisterView: View {
                         
                     }
                     
+                    
+                    
                     .padding()
                     
-                    .alert(isPresented: $viewModel.registrationSuccessful) {
+                    .alert(isPresented: $registrationSuccessful) {
+                        Alert(title: Text("Registration succcess"), message: Text("create"), dismissButton: .default(Text("Ok")))
+                        
+                    }
+                    
+                   /* .alert(isPresented: $viewModel.registrationSuccessful) {
                         Alert(title: Text("Success"),
                               message: Text("Registration successful!"),
                               dismissButton: .default(Text("OK"),
                               action:{
                             shouldNavigateToHomeScreen = true
+                            
                         }))
                         
-                    }
+                    }*/
+                    
+                              
                     
                     
-                }
+                } // End of register form
                 
                 .offset(y: -50)
-                .navigationDestination(isPresented: $shouldNavigateToHomeScreen){
-                    HomeView()
-                }
+                /* .navigationDestination(isPresented: $shouldNavigateToHomeScreen){
+                  HomeView()
+               }*/
                 
             } // End of Vstack
             

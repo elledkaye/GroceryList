@@ -11,7 +11,7 @@ class RegisterViewModel: ObservableObject{
     @Published var email = ""
     @Published var password = ""
     @Published var errorMessage = ""
-    @Published var registrationSuccessful = false
+   @Published var registrationSuccessful = false
     
     init(){}
     
