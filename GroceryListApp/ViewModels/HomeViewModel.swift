@@ -1,10 +1,3 @@
-//
-//  HomeViewModel.swift
-//  GroceryListApp
-//
-//  Created by Danielle Kaye on 8/22/24.
-//
-
 import Foundation
 import SwiftUI
 import FirebaseFirestore
@@ -16,7 +9,7 @@ class HomeViewModel: ObservableObject{
     private let db = Firestore.firestore()
     
     
-    // Call a functio that will fetch the current users grocery list
+    // Call a function that will fetch the current users grocery list
     func fetchGroceryLists(for userId: String){
         db.collection("users").document(userId).collection("groceryLists").getDocuments{[weak self] snapshot, error in
             if let error = error{

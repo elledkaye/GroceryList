@@ -42,8 +42,8 @@ struct LoginScreen: View {
           
                 VStack{
                     Text("Need Help?")
-                    NavigationLink("Create an account", destination: RegisterView())
-                    NavigationLink("Forgot Password", destination: RegisterView())
+                    NavigationLink("Create an account", destination: RegisterScreen())
+                    NavigationLink("Forgot Password", destination: RegisterScreen())
                     
                 }
                 .padding(.bottom)

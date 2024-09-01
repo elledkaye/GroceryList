@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct RegisterView: View {
+struct RegisterScreen: View {
     
     // Linking the view to the viewModel
     @StateObject var viewModel = RegisterViewModel()
@@ -37,8 +37,7 @@ struct RegisterView: View {
                         viewModel.register()
                         
                     }
-                    
-                    
+            
                     
                     .padding()
                     
@@ -76,5 +75,5 @@ struct RegisterView: View {
 }
 
 #Preview {
-    RegisterView()
+    RegisterScreen()
 }
