@@ -5,6 +5,7 @@ import FirebaseFirestore
 class HomeViewModel: ObservableObject{
     @Published var groceryLists: [String] = [] // Array of string to store the names of grocery lists
     @Published var errorMessage : String = ""
+   
     
     private let db = Firestore.firestore()
     

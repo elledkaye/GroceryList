@@ -22,8 +22,11 @@ import FirebaseAuth
 struct HomeScreen: View {
     @StateObject private var viewModel = HomeViewModel()
     @State var userId: String?
+   // @State var isPresentingCreateGroceryListScreen = false
     
     var body: some View {
+        
+       /*
         NavigationView{
     
             ZStack{
@@ -43,25 +46,28 @@ struct HomeScreen: View {
                     }
                     
                     VStack{
-                        GLButton(title: "Create Grocery List", background: Color.green){
-                            
+                            GLButton(title: "Create Grocery List", background: Color.green){
+                              
                         }
-                        .frame(width: 360, height:80)
-                        
-                        
-                        
+                            .frame(width: 360, height:80)
+                
                     } // Button VStack
                 
                     
                 } // End of Outter VStack
                 .padding()
-                
-                
-                
+        
             } //end of ZStack
             .toolbar{
                 ToolbarItem(placement: .navigationBarTrailing){
-                    Image(systemName: "person.crop.circle.fill")
+                    Button(action:{
+                        
+                        // Show profile view
+                        
+                        
+                    }){
+                        Image(systemName: "plus")
+                    }
                 }
                 
                 ToolbarItem(placement: .navigationBarLeading){
@@ -76,48 +82,31 @@ struct HomeScreen: View {
             
         } // End of NavigationView
       
-        
-     /*   VStack{
-            if viewModel.groceryLists.isEmpty{
-                Text("No grocery list found")
-                    .font(.headline)
-                    .foregroundColor(.gray)
-            }else{
-                List(viewModel.groceryLists, id: \.self){
-                    listName in
-                    Text(listName)
-                }
-            }
-            
-            
-        }*/
         .onAppear {
             if let userId = Auth.auth().currentUser?.uid{
                 viewModel.fetchGroceryLists(for: userId)
                 
             }
-            
-          
-       
-             
         }
+        */
         
-        /*
         TabView{
              // User is at the home screen
             // If the current user does not have a list (dictionary) already set up then show no list
             // Otherwise we want to dislay the list of lists
             
             
-          Text("Home")
+            GroceryListScreen()
                 .tabItem { Label("Home" , systemImage: "house")
                 }
-            
-            Text("Profile")
-                .tabItem { Label("Profile" , systemImage: "person.circle") }
+        
+            ProfileScreen()
+                .tabItem { Label("Profile" ,
+                                 systemImage: "person.circle")
+                }
         } // End of tab view
          
-         */
+         
     }
 }
 

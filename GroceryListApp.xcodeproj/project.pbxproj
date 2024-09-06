@@ -33,6 +33,8 @@
 		EF2C84AB2C777A7600C7BE58 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84AA2C777A7600C7BE58 /* HomeScreen.swift */; };
 		EF2C84AD2C777A8700C7BE58 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84AC2C777A8700C7BE58 /* HomeViewModel.swift */; };
 		EF2C84AF2C777D6C00C7BE58 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84AE2C777D6C00C7BE58 /* SettingsScreen.swift */; };
+		EF8B1FCC2C87950900F18D9D /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8B1FCB2C87950900F18D9D /* ProfileScreen.swift */; };
+		EF8B1FCE2C87951500F18D9D /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8B1FCD2C87951500F18D9D /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		EF2C84AA2C777A7600C7BE58 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		EF2C84AC2C777A8700C7BE58 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		EF2C84AE2C777D6C00C7BE58 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		EF8B1FCB2C87950900F18D9D /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		EF8B1FCD2C87951500F18D9D /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +182,7 @@
 				EF2C84AA2C777A7600C7BE58 /* HomeScreen.swift */,
 				EF2C84AE2C777D6C00C7BE58 /* SettingsScreen.swift */,
 				EF0E4DD82C83E68700E470BF /* CreateGroceryListScreen.swift */,
+				EF8B1FCB2C87950900F18D9D /* ProfileScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 				EF2C848D2C6E34DF00C7BE58 /* ContentViewModel.swift */,
 				EF2C84AC2C777A8700C7BE58 /* HomeViewModel.swift */,
 				EF0E4DDA2C83E69A00E470BF /* CreateGroceryListViewModel.swift */,
+				EF8B1FCD2C87951500F18D9D /* ProfileViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -355,6 +361,7 @@
 				EF2C84AF2C777D6C00C7BE58 /* SettingsScreen.swift in Sources */,
 				EF0E4DD92C83E68700E470BF /* CreateGroceryListScreen.swift in Sources */,
 				EF2C848C2C6E34C500C7BE58 /* LoginViewModel.swift in Sources */,
+				EF8B1FCC2C87950900F18D9D /* ProfileScreen.swift in Sources */,
 				EF2C84AB2C777A7600C7BE58 /* HomeScreen.swift in Sources */,
 				EF2C848A2C6E2AD700C7BE58 /* LoginScreen.swift in Sources */,
 				EF2C84902C6E395E00C7BE58 /* GroceryListScreen.swift in Sources */,
@@ -365,6 +372,7 @@
 				EF2C845C2C6B979600C7BE58 /* GroceryListAppApp.swift in Sources */,
 				EF2C84A92C7655A900C7BE58 /* Extensions.swift in Sources */,
 				EF2C84A72C76552400C7BE58 /* User.swift in Sources */,
+				EF8B1FCE2C87951500F18D9D /* ProfileViewModel.swift in Sources */,
 				EF2C849A2C6F7E1D00C7BE58 /* GLButton.swift in Sources */,
 				EF2C84962C6E398F00C7BE58 /* RegisterViewModel.swift in Sources */,
 				EF2C84AD2C777A8700C7BE58 /* HomeViewModel.swift in Sources */,
