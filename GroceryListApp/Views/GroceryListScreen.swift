@@ -6,6 +6,8 @@
 -> Remove button
 -> item: Name, and the listName which the item belongs to
 
+ Workflow to creating a grocery list:
+ User clicks the '+' sign to create new list -> Modal displays prompting user to enter in title of the list and a couple of list items -> User clicks 'Save button' -> When user clicks 'Save' the newly created list gets created and stored in firebase DB which will reflect on the home screen
  */
 
 import SwiftUI
@@ -13,6 +15,14 @@ import FirebaseAuth
 
 struct GroceryListScreen: View {
     @StateObject private var viewModel = GroceryListViewModel()
+    @State var  isPresentedCreateGroceryList: Bool = false // State to control if the CreateGroceryList screen displays or no??
+    
+    // Store  neww list name
+    @State var newlistName: String = " "
+    
+    // Store list items which will be an array filled of strings
+    @State var newItems: [String] = []
+    
 
     var body: some View {
         NavigationView {
@@ -40,7 +50,9 @@ struct GroceryListScreen: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
-                        // Create a new grocery list
+                        // Display create grocery list model
+                        isPresentedCreateGroceryList = true
+        
                     }) {
                         Image(systemName: "plus")
                     }
@@ -63,6 +75,9 @@ struct GroceryListScreen: View {
                 viewModel.fetchGroceryLists(for: userId)
             }
         }
+        
+        // place modal here
+        
     }
 }
 
