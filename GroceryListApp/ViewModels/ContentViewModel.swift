@@ -18,7 +18,6 @@ class ContentViewModel: ObservableObject{
             DispatchQueue.main.async{
                 self?.currentUserId = user?.uid ?? ""
                 
-                
             }
             
             

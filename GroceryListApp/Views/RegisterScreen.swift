@@ -27,8 +27,15 @@ struct RegisterScreen: View {
                     
                     // Display if register was successful
                     TextField("Name", text: $viewModel.name)
+                        .textFieldStyle(DefaultTextFieldStyle())
+                    
                     TextField("Email", text: $viewModel.email)
+                        .textFieldStyle(DefaultTextFieldStyle())
+                        .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+                        .autocorrectionDisabled()
+                    
                     SecureField("Password", text: $viewModel.password)
+                        .textFieldStyle(DefaultTextFieldStyle())
                     
                     
                     // Use reusable button

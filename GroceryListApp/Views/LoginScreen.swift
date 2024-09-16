@@ -12,7 +12,7 @@ struct LoginScreen: View {
                 HeaderView(title: "Grocery List", subtitle: "Your shopping helper", background: Color.green)
                     .offset(y: 70)
                 
-                Text("Image can go here")
+          
                     
                 Form{
                     
@@ -23,6 +23,7 @@ struct LoginScreen: View {
                     
                     // Binding email address to email in the LoginViewModel
                     TextField("Email Address", text: $viewModel.email)
+                        .autocapitalization(.none)
                     
                     // Binding password to password in the LoginViewModel
                     SecureField("Password", text: $viewModel.password)

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EF0E4DD92C83E68700E470BF /* CreateGroceryListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0E4DD82C83E68700E470BF /* CreateGroceryListScreen.swift */; };
+		EF0E4DD92C83E68700E470BF /* CreateGroceryListModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0E4DD82C83E68700E470BF /* CreateGroceryListModal.swift */; };
 		EF0E4DDB2C83E69A00E470BF /* CreateGroceryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0E4DDA2C83E69A00E470BF /* CreateGroceryListViewModel.swift */; };
 		EF2C845C2C6B979600C7BE58 /* GroceryListAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C845B2C6B979600C7BE58 /* GroceryListAppApp.swift */; };
 		EF2C845E2C6B979600C7BE58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C845D2C6B979600C7BE58 /* ContentView.swift */; };
@@ -55,7 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EF0E4DD82C83E68700E470BF /* CreateGroceryListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroceryListScreen.swift; sourceTree = "<group>"; };
+		EF0E4DD82C83E68700E470BF /* CreateGroceryListModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroceryListModal.swift; sourceTree = "<group>"; };
 		EF0E4DDA2C83E69A00E470BF /* CreateGroceryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroceryListViewModel.swift; sourceTree = "<group>"; };
 		EF2C84582C6B979600C7BE58 /* GroceryListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2C845B2C6B979600C7BE58 /* GroceryListAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListAppApp.swift; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 				EF2C84992C6F7E1D00C7BE58 /* GLButton.swift */,
 				EF2C84AA2C777A7600C7BE58 /* HomeScreen.swift */,
 				EF2C84AE2C777D6C00C7BE58 /* SettingsScreen.swift */,
-				EF0E4DD82C83E68700E470BF /* CreateGroceryListScreen.swift */,
+				EF0E4DD82C83E68700E470BF /* CreateGroceryListModal.swift */,
 				EF8B1FCB2C87950900F18D9D /* ProfileScreen.swift */,
 			);
 			path = Views;
@@ -359,7 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF2C84AF2C777D6C00C7BE58 /* SettingsScreen.swift in Sources */,
-				EF0E4DD92C83E68700E470BF /* CreateGroceryListScreen.swift in Sources */,
+				EF0E4DD92C83E68700E470BF /* CreateGroceryListModal.swift in Sources */,
 				EF2C848C2C6E34C500C7BE58 /* LoginViewModel.swift in Sources */,
 				EF8B1FCC2C87950900F18D9D /* ProfileScreen.swift in Sources */,
 				EF2C84AB2C777A7600C7BE58 /* HomeScreen.swift in Sources */,

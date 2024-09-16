@@ -30,6 +30,29 @@ class GroceryListViewModel: ObservableObject{
         
     }
     
+    
+    func addGroceryList(name: String, items: [String], userId: String){
+        let db = Firestore.firestore()
+        let groceryListRef = db.collection("users").document(userId).collection("groceryLists").document()
+        
+        groceryListRef.setData([
+            "name": name,
+            "items": items
+        
+        ]){
+            
+            error in
+            if let error = error {
+                print ("Error adding grocery list: \(error)")
+            }else{
+                print("Grocer list added successfully")
+                self.fetchGroceryLists(for: userId)
+            }
+        }
+        
+        
+    }
+    
 
     
     

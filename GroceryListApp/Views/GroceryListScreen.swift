@@ -15,10 +15,10 @@ import FirebaseAuth
 
 struct GroceryListScreen: View {
     @StateObject private var viewModel = GroceryListViewModel()
-    @State var  isPresentedCreateGroceryList: Bool = false // State to control if the CreateGroceryList screen displays or no??
+    @State var isPresentedCreateGroceryList: Bool = false // Modal State to control if the CreateGroceryList screen displays or not
     
-    // Store  neww list name
-    @State var newlistName: String = " "
+    // Store  new list name
+    @State var newListName: String = " "
     
     // Store list items which will be an array filled of strings
     @State var newItems: [String] = []
@@ -77,8 +77,22 @@ struct GroceryListScreen: View {
         }
         
         // place modal here
+        .sheet(isPresented: $isPresentedCreateGroceryList){
+            CreateGroceryListModal(isPresented: $isPresentedCreateGroceryList, newListName: $newListName, newItems: $newItems, saveAction: saveGroceryList)
+        }
         
     }
+    
+    func saveGroceryList(){
+        if let userId = Auth.auth().currentUser?.uid{
+            
+           // viewModel.addGroceryList(name: newListName, items: newItems, userId: userId)
+            viewModel.fetchGroceryLists(for: userId)
+        }
+        
+    }
+    
+    //isPresentedCreateGroceryList = false
 }
 
 #Preview {
