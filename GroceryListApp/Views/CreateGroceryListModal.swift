@@ -5,6 +5,7 @@ import SwiftUI
 struct CreateGroceryListModal: View {
     @StateObject var viewModel = CreateGroceryListViewModel()
     @State var newItem: String = "" // For adding items dynamically
+    
     @Binding var isPresented: Bool // Binding to control when to show/hide modal
     @Binding var newListName: String // Binding to the new list name
     @Binding var newItems: [String] // Binding to the new items for the list

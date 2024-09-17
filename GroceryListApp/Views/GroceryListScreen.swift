@@ -18,7 +18,7 @@ struct GroceryListScreen: View {
     @State var isPresentedCreateGroceryList: Bool = false // Modal State to control if the CreateGroceryList screen displays or not
     
     // Store  new list name
-    @State var newListName: String = " "
+    @State var newListName: String = ""
     
     // Store list items which will be an array filled of strings
     @State var newItems: [String] = []
@@ -50,6 +50,8 @@ struct GroceryListScreen: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
+                        newListName = ""
+                        newItems = []
                         // Display create grocery list model
                         isPresentedCreateGroceryList = true
         
@@ -84,16 +86,18 @@ struct GroceryListScreen: View {
     }
     
     func saveGroceryList(){
+       
         if let userId = Auth.auth().currentUser?.uid{
             
-           // viewModel.addGroceryList(name: newListName, items: newItems, userId: userId)
+           viewModel.addGroceryList(name: newListName, items: newItems, userId: userId)
             viewModel.fetchGroceryLists(for: userId)
         }
-        
+        isPresentedCreateGroceryList = false
     }
     
-    //isPresentedCreateGroceryList = false
+   
 }
+
 
 #Preview {
     GroceryListScreen()
