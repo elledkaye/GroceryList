@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EF0E4DD92C83E68700E470BF /* CreateGroceryListModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0E4DD82C83E68700E470BF /* CreateGroceryListModal.swift */; };
 		EF0E4DDB2C83E69A00E470BF /* CreateGroceryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0E4DDA2C83E69A00E470BF /* CreateGroceryListViewModel.swift */; };
 		EF2C845C2C6B979600C7BE58 /* GroceryListAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C845B2C6B979600C7BE58 /* GroceryListAppApp.swift */; };
 		EF2C845E2C6B979600C7BE58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C845D2C6B979600C7BE58 /* ContentView.swift */; };
@@ -35,6 +34,7 @@
 		EF2C84AF2C777D6C00C7BE58 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84AE2C777D6C00C7BE58 /* SettingsScreen.swift */; };
 		EF8B1FCC2C87950900F18D9D /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8B1FCB2C87950900F18D9D /* ProfileScreen.swift */; };
 		EF8B1FCE2C87951500F18D9D /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8B1FCD2C87951500F18D9D /* ProfileViewModel.swift */; };
+		EF8B1FD02C99B6B000F18D9D /* CreateGroceryListModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8B1FCF2C99B6B000F18D9D /* CreateGroceryListModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +55,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EF0E4DD82C83E68700E470BF /* CreateGroceryListModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroceryListModal.swift; sourceTree = "<group>"; };
 		EF0E4DDA2C83E69A00E470BF /* CreateGroceryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroceryListViewModel.swift; sourceTree = "<group>"; };
 		EF2C84582C6B979600C7BE58 /* GroceryListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2C845B2C6B979600C7BE58 /* GroceryListAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListAppApp.swift; sourceTree = "<group>"; };
@@ -84,6 +83,7 @@
 		EF2C84AE2C777D6C00C7BE58 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		EF8B1FCB2C87950900F18D9D /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		EF8B1FCD2C87951500F18D9D /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		EF8B1FCF2C99B6B000F18D9D /* CreateGroceryListModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateGroceryListModal.swift; path = "../../../../../Library/Mobile Documents/.Trash/CreateGroceryListModal.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,12 +176,12 @@
 				EF2C845D2C6B979600C7BE58 /* ContentView.swift */,
 				EF2C84932C6E398400C7BE58 /* RegisterScreen.swift */,
 				EF2C84892C6E2AD700C7BE58 /* LoginScreen.swift */,
+				EF8B1FCF2C99B6B000F18D9D /* CreateGroceryListModal.swift */,
 				EF2C848F2C6E395E00C7BE58 /* GroceryListScreen.swift */,
 				EF2C84972C6E39AB00C7BE58 /* HeaderView.swift */,
 				EF2C84992C6F7E1D00C7BE58 /* GLButton.swift */,
 				EF2C84AA2C777A7600C7BE58 /* HomeScreen.swift */,
 				EF2C84AE2C777D6C00C7BE58 /* SettingsScreen.swift */,
-				EF0E4DD82C83E68700E470BF /* CreateGroceryListModal.swift */,
 				EF8B1FCB2C87950900F18D9D /* ProfileScreen.swift */,
 			);
 			path = Views;
@@ -359,13 +359,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF2C84AF2C777D6C00C7BE58 /* SettingsScreen.swift in Sources */,
-				EF0E4DD92C83E68700E470BF /* CreateGroceryListModal.swift in Sources */,
 				EF2C848C2C6E34C500C7BE58 /* LoginViewModel.swift in Sources */,
 				EF8B1FCC2C87950900F18D9D /* ProfileScreen.swift in Sources */,
 				EF2C84AB2C777A7600C7BE58 /* HomeScreen.swift in Sources */,
 				EF2C848A2C6E2AD700C7BE58 /* LoginScreen.swift in Sources */,
 				EF2C84902C6E395E00C7BE58 /* GroceryListScreen.swift in Sources */,
 				EF2C84922C6E396B00C7BE58 /* GroceryListViewModel.swift in Sources */,
+				EF8B1FD02C99B6B000F18D9D /* CreateGroceryListModal.swift in Sources */,
 				EF2C845E2C6B979600C7BE58 /* ContentView.swift in Sources */,
 				EF2C84982C6E39AB00C7BE58 /* HeaderView.swift in Sources */,
 				EF2C84942C6E398400C7BE58 /* RegisterScreen.swift in Sources */,
