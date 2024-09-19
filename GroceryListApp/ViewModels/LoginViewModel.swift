@@ -22,8 +22,6 @@ class LoginViewModel: ObservableObject{
     
     init(){}
     
- 
-    
     func login(){
         if email.trimmingCharacters(in: .whitespaces).isEmpty && password.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
             errorMessage = "Please enter email and password"
@@ -40,7 +38,18 @@ class LoginViewModel: ObservableObject{
         }
         
         // Try to log in
-        Auth.auth().signIn(withEmail: email, password: password) // Reference to firebase authentication
+        print("Attempting to log in with email: \(email)") // Take out print statement
+        Auth.auth().signIn(withEmail: email, password: password) {[weak self] authResult, error in
+            if let error = error{
+                self?.errorMessage = error.localizedDescription
+                print("Error during sign in: \(error.localizedDescription)")
+                return
+            }
+            
+            print("User logged in successfully")
+            
+        }// Reference to firebase authentication
+       
         
     }
    

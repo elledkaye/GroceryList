@@ -8,16 +8,63 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "9FEC17D1-F1C6-4BDA-BD65-9AD28B604F69"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GroceryListApp/Views/LoginScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "body"
             landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "9FEC17D1-F1C6-4BDA-BD65-9AD28B604F69 - 36fd0ef42b8cf39c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(Swift.Optional&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.SecureField&lt;SwiftUI.Text&gt;, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.offset(x: CoreGraphics.CGFloat, y: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, SwiftUI.Text, &lt;&lt;opaque return type of SwiftUI.View.offset(x: CoreGraphics.CGFloat, y: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.border&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, width: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0 in GroceryListApp.LoginScreen.body.getter : some"
+                  moduleName = "GroceryListApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/daniellekaye/Desktop/Projects/GroceryList/GroceryListApp/Views/LoginScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "9FEC17D1-F1C6-4BDA-BD65-9AD28B604F69 - efadee51d43938a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(Swift.Optional&lt;SwiftUI.Text&gt;, &lt;&lt;opaque return type of SwiftUI.View.autocapitalization(__C.UITextAutocapitalizationType) -&gt; some&gt;&gt;.0, SwiftUI.SecureField&lt;SwiftUI.Text&gt;, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.offset(x: CoreGraphics.CGFloat, y: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, SwiftUI.Text, &lt;&lt;opaque return type of SwiftUI.View.offset(x: CoreGraphics.CGFloat, y: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.border&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, width: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0 in GroceryListApp.LoginScreen.body.getter : some"
+                  moduleName = "GroceryListApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/daniellekaye/Desktop/Projects/GroceryList/GroceryListApp/Views/LoginScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "9FEC17D1-F1C6-4BDA-BD65-9AD28B604F69 - 5ada3ed0a9493226"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(Swift.Optional&lt;SwiftUI.Text&gt;, &lt;&lt;opaque return type of SwiftUI.View.autocapitalization(__C.UITextAutocapitalizationType) -&gt; some&gt;&gt;.0, SwiftUI.SecureField&lt;SwiftUI.Text&gt;, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.offset(x: CoreGraphics.CGFloat, y: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.offset(x: CoreGraphics.CGFloat, y: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.border&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, width: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0 in GroceryListApp.LoginScreen.body.getter : some"
+                  moduleName = "GroceryListApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/daniellekaye/Desktop/Projects/GroceryList/GroceryListApp/Views/LoginScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

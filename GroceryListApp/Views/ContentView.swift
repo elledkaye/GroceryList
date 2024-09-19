@@ -15,9 +15,21 @@
 import SwiftUI
 
 struct ContentView: View {
-  
+  @StateObject var viewModel = ContentViewModel()
+    
+    // We want to show the login screen only if user is not logged in
+    // Other wise if the user is logged in we want to show their account screen which would be the home screen
+    
     var body: some View {
-      LoginScreen()
+        if viewModel.isSignedIn,
+           !viewModel.currentUserId.isEmpty{
+            HomeScreen()
+            
+        }else{
+            
+            LoginScreen()
+        }
+   
         
     }
 }

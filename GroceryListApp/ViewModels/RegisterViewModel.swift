@@ -11,6 +11,7 @@ class RegisterViewModel: ObservableObject{
     @Published var email = ""
     @Published var password = ""
     @Published var errorMessage = ""
+   @Published var registrationSuccessful = false
     
     init(){}
     
@@ -27,7 +28,6 @@ class RegisterViewModel: ObservableObject{
             
         }
         
-        
         if !validateName(){
           return
         }
@@ -41,10 +41,6 @@ class RegisterViewModel: ObservableObject{
             
         }
         
-    
-        
-        
-    
         
         // Auth.auth().createUser is a method that is used to create a new user  with an email and password
         // result: contains user data if the account creation is successful
@@ -58,6 +54,7 @@ class RegisterViewModel: ObservableObject{
             }
             
             self?.insertUserRecord(id: userId)
+            self?.registrationSuccessful = true
             
         }
         
