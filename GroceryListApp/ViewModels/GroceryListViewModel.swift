@@ -53,6 +53,12 @@ class GroceryListViewModel: ObservableObject{
         
     }
     
+    
+    func openGroceryList(){
+        
+        
+    }
+    
 
     
     

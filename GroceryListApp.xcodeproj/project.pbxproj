@@ -35,6 +35,7 @@
 		EF8B1FCC2C87950900F18D9D /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8B1FCB2C87950900F18D9D /* ProfileScreen.swift */; };
 		EF8B1FCE2C87951500F18D9D /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8B1FCD2C87951500F18D9D /* ProfileViewModel.swift */; };
 		EF8B1FD02C99B6B000F18D9D /* CreateGroceryListModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8B1FCF2C99B6B000F18D9D /* CreateGroceryListModal.swift */; };
+		EF8B1FD62CA2F8F100F18D9D /* GroceryListDetailModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8B1FD52CA2F8F100F18D9D /* GroceryListDetailModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		EF8B1FCB2C87950900F18D9D /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		EF8B1FCD2C87951500F18D9D /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		EF8B1FCF2C99B6B000F18D9D /* CreateGroceryListModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateGroceryListModal.swift; path = "../../../../../Library/Mobile Documents/.Trash/CreateGroceryListModal.swift"; sourceTree = "<group>"; };
+		EF8B1FD52CA2F8F100F18D9D /* GroceryListDetailModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListDetailModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				EF2C84AA2C777A7600C7BE58 /* HomeScreen.swift */,
 				EF2C84AE2C777D6C00C7BE58 /* SettingsScreen.swift */,
 				EF8B1FCB2C87950900F18D9D /* ProfileScreen.swift */,
+				EF8B1FD52CA2F8F100F18D9D /* GroceryListDetailModal.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				EF2C84A92C7655A900C7BE58 /* Extensions.swift in Sources */,
 				EF2C84A72C76552400C7BE58 /* User.swift in Sources */,
 				EF8B1FCE2C87951500F18D9D /* ProfileViewModel.swift in Sources */,
+				EF8B1FD62CA2F8F100F18D9D /* GroceryListDetailModal.swift in Sources */,
 				EF2C849A2C6F7E1D00C7BE58 /* GLButton.swift in Sources */,
 				EF2C84962C6E398F00C7BE58 /* RegisterViewModel.swift in Sources */,
 				EF2C84AD2C777A8700C7BE58 /* HomeViewModel.swift in Sources */,
