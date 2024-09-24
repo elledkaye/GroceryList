@@ -23,7 +23,8 @@ struct GroceryListScreen: View {
     
     
     // State to navigate the detailed list view of the grocery list
-    
+    @State var selectedGroceryList: String
+    @State var isPresentedDetailView: Bool = false
     
 
     var body: some View {
@@ -34,10 +35,13 @@ struct GroceryListScreen: View {
                 
                 VStack {
                     if viewModel.userGroceryLists.isEmpty {
-                        Text("No grocery list found")
+                        Text("No grocery lists found")
                             .font(.headline)
                             .foregroundColor(.gray)
-                    } else {
+                    } // else display the list of lists
+                        // if the user selects a list we then want to open the detailModal
+                        // within the detailModal we display the list of items
+                    else {
                         List(viewModel.userGroceryLists, id: \.self) { listName in
                             Text(listName)
                         }
@@ -76,10 +80,16 @@ struct GroceryListScreen: View {
             }
         }
         
-        // place modal here
+        // Sheet for CreateGroceryListModal
         .sheet(isPresented: $isPresentedCreateGroceryList){
             CreateGroceryListModal(isPresented: $isPresentedCreateGroceryList, newListName: $newGroceryListName, newItems: $newGroceryItems, saveAction: saveGroceryList)
         }
+        
+        
+        // Sheet for displaying GroceryListDetailView
+        
+        
+        
         
     }
     

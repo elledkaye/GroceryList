@@ -45,7 +45,7 @@ class GroceryListViewModel: ObservableObject{
             if let error = error {
                 print ("Error adding grocery list: \(error)")
             }else{
-                print("Grocer list added successfully")
+                print("Grocery list added successfully")
                 self.fetchGroceryLists(for: userId)
             }
         }
