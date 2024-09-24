@@ -17,11 +17,9 @@ struct GroceryListScreen: View {
     @StateObject private var viewModel = GroceryListViewModel()
     @State var isPresentedCreateGroceryList: Bool = false // Modal State to control if the CreateGroceryList screen displays or not
     
-    // Store  new list name
-    @State var newListName: String = ""
-    
-    // Store list items which will be an array filled of strings
-    @State var newItems: [String] = []
+    // Store new grocert list name and grocery list items
+    @State var newGroceryListName: String = ""
+    @State var newGroceryItems: [String] = []
     
 
     var body: some View {
@@ -31,12 +29,12 @@ struct GroceryListScreen: View {
                     .ignoresSafeArea()
                 
                 VStack {
-                    if viewModel.groceryLists.isEmpty {
+                    if viewModel.userGroceryLists.isEmpty {
                         Text("No grocery list found")
                             .font(.headline)
                             .foregroundColor(.gray)
                     } else {
-                        List(viewModel.groceryLists, id: \.self) { listName in
+                        List(viewModel.userGroceryLists, id: \.self) { listName in
                             Text(listName)
                         }
                     }
@@ -50,8 +48,8 @@ struct GroceryListScreen: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
-                        newListName = ""
-                        newItems = []
+                        newGroceryListName = ""
+                        newGroceryItems = []
                         // Display create grocery list model
                         isPresentedCreateGroceryList = true
         
@@ -80,16 +78,14 @@ struct GroceryListScreen: View {
         
         // place modal here
         .sheet(isPresented: $isPresentedCreateGroceryList){
-            CreateGroceryListModal(isPresented: $isPresentedCreateGroceryList, newListName: $newListName, newItems: $newItems, saveAction: saveGroceryList)
+            CreateGroceryListModal(isPresented: $isPresentedCreateGroceryList, newListName: $newGroceryListName, newItems: $newGroceryItems, saveAction: saveGroceryList)
         }
         
     }
     
     func saveGroceryList(){
-       
         if let userId = Auth.auth().currentUser?.uid{
-            
-           viewModel.addGroceryList(name: newListName, items: newItems, userId: userId)
+           viewModel.addGroceryList(name: newGroceryListName, items: newGroceryItems, userId: userId)
             viewModel.fetchGroceryLists(for: userId)
         }
         isPresentedCreateGroceryList = false

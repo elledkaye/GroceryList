@@ -4,7 +4,7 @@ import SwiftUI
 import FirebaseFirestore
 
 class GroceryListViewModel: ObservableObject{
-    @Published var groceryLists: [String] = [] // Array of string to store the names of grocery lists
+    @Published var userGroceryLists: [String] = [] // Array of strings to store the names of grocery lists
     @Published var errorMessage : String = ""
  
     
@@ -15,13 +15,13 @@ class GroceryListViewModel: ObservableObject{
     func fetchGroceryLists(for userId: String){
         db.collection("users").document(userId).collection("groceryLists").getDocuments{[weak self] snapshot, error in
             if let error = error{
-                self?.errorMessage = "Failed to getch lists: \(error.localizedDescription)"
+                self?.errorMessage = "Failed to fetch lists: \(error.localizedDescription)"
                 return
                 
             }
             
             if let documents = snapshot?.documents{
-                self?.groceryLists = documents.compactMap{ $0["name"] as? String }
+                self?.userGroceryLists = documents.compactMap{ $0["name"] as? String }
             }
             
         }
