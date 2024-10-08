@@ -15,7 +15,9 @@ import FirebaseAuth
 
 struct GroceryListScreen: View {
     @StateObject private var viewModel = GroceryListViewModel()
-    @State var isPresentedCreateGroceryList: Bool = false // Modal State to control if the CreateGroceryList screen displays or not
+    
+    // Modal State to control if the CreateGroceryList screen displays or not
+    @State var isPresentedCreateGroceryList: Bool = false
     
     // Store new grocery list name and grocery list items
     @State var newGroceryListName: String = ""
@@ -23,7 +25,7 @@ struct GroceryListScreen: View {
     
     
     // State to navigate the detailed list view of the grocery list
-    @State var selectedGroceryList: String
+    @State var selectedGroceryList: GroceryList? = nil
     @State var isPresentedDetailView: Bool = false
     
 
@@ -42,8 +44,13 @@ struct GroceryListScreen: View {
                         // if the user selects a list we then want to open the detailModal
                         // within the detailModal we display the list of items
                     else {
-                        List(viewModel.userGroceryLists, id: \.self) { listName in
-                            Text(listName)
+                        List(viewModel.userGroceryLists) { groceryList in
+                            Button(action:{
+                                openGroceryList(groceryList)
+                            }){
+                                
+                                Text(groceryList.name)
+                            }
                         }
                     }
                 } // End of Outer VStack
@@ -87,8 +94,9 @@ struct GroceryListScreen: View {
         
         
         // Sheet for displaying GroceryListDetailView
-        
-        
+        .sheet(item: $selectedGroceryList){ groceryList in
+            GroceryListDetailModal(isPresented:$isPresentedDetailView, groceryList: groceryList)
+        }
         
         
     }
@@ -102,9 +110,9 @@ struct GroceryListScreen: View {
     }
     
     
-    func openGroceryList(){
-        
-        
+    func openGroceryList(_ groceryList: GroceryList){
+        selectedGroceryList = groceryList
+        isPresentedDetailView = true
     }
     
    

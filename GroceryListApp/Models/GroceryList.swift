@@ -1,9 +1,15 @@
-
+/*
+ Notes:
+ - Reminder a struct is used to store variables of different data types
+ 
+ -Identifiable: Is a protocol that allows SwiftUI to uniquely identify items in lists and other views
+ 
+ */
 import Foundation
-// A struct is used to store variables of different data types
 
-struct GroceryList:Codable{
-    var id: String
+
+struct GroceryList: Identifiable{
+    var id:String = UUID().uuidString
     var name: String
     var items: [String]
     

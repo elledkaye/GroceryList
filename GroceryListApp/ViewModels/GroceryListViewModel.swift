@@ -4,7 +4,7 @@ import SwiftUI
 import FirebaseFirestore
 
 class GroceryListViewModel: ObservableObject{
-    @Published var userGroceryLists: [String] = [] // Array of strings to store the names of grocery lists
+    @Published var userGroceryLists: [GroceryList] = [] // Array of strings to store the names of grocery lists
     @Published var errorMessage : String = ""
  
     
@@ -21,7 +21,14 @@ class GroceryListViewModel: ObservableObject{
             }
             
             if let documents = snapshot?.documents{
-                self?.userGroceryLists = documents.compactMap{ $0["name"] as? String }
+                self?.userGroceryLists = documents.compactMap{ document in
+                    guard let name = document["name"] as? String,
+                          let items = document["items"] as? [String] else{
+                        
+                        return nil
+                    }
+                    return GroceryList(id: document.documentID, name: name, items: items)
+                              }
             }
             
         }
@@ -29,7 +36,6 @@ class GroceryListViewModel: ObservableObject{
         
         
     }
-    
     
     func addGroceryList(name: String, items: [String], userId: String){
         let db = Firestore.firestore()
@@ -40,7 +46,6 @@ class GroceryListViewModel: ObservableObject{
             "items": items
         
         ]){
-            
             error in
             if let error = error {
                 print ("Error adding grocery list: \(error)")
@@ -54,11 +59,7 @@ class GroceryListViewModel: ObservableObject{
     }
     
     
-    func openGroceryList(){
-        
-        
-    }
-    
+   // Should I put openGroceryList in here??
 
     
     

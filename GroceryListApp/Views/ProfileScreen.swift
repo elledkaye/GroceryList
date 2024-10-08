@@ -12,9 +12,7 @@ struct ProfileScreen: View {
                 
                 VStack{
                     Text("Dislay User info")
-                    
-                    
-                    
+            
                 }
                 
                 

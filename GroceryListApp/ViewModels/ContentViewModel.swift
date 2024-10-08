@@ -1,6 +1,3 @@
-//
-//  ContentViewModel.swift
-//  GroceryListApp
 // Reminder: ViewModel encapsulates presentation login and state
 
 import Foundation
@@ -17,11 +14,7 @@ class ContentViewModel: ObservableObject{
             [weak self]_, user in
             DispatchQueue.main.async{
                 self?.currentUserId = user?.uid ?? ""
-                
             }
-            
-            
-            
         }
         
         

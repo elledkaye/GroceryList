@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EF0E4DDB2C83E69A00E470BF /* CreateGroceryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0E4DDA2C83E69A00E470BF /* CreateGroceryListViewModel.swift */; };
 		EF2C845C2C6B979600C7BE58 /* GroceryListAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C845B2C6B979600C7BE58 /* GroceryListAppApp.swift */; };
 		EF2C845E2C6B979600C7BE58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C845D2C6B979600C7BE58 /* ContentView.swift */; };
 		EF2C84602C6B979700C7BE58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF2C845F2C6B979700C7BE58 /* Assets.xcassets */; };
@@ -37,6 +36,7 @@
 		EF8B1FD02C99B6B000F18D9D /* CreateGroceryListModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8B1FCF2C99B6B000F18D9D /* CreateGroceryListModal.swift */; };
 		EF8B1FD62CA2F8F100F18D9D /* GroceryListDetailModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8B1FD52CA2F8F100F18D9D /* GroceryListDetailModal.swift */; };
 		EF8B1FD82CA3129E00F18D9D /* GroceryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8B1FD72CA3129E00F18D9D /* GroceryList.swift */; };
+		EF8B1FDB2CA5A10200F18D9D /* AdaptsToKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8B1FDA2CA5A10200F18D9D /* AdaptsToKeyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EF0E4DDA2C83E69A00E470BF /* CreateGroceryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroceryListViewModel.swift; sourceTree = "<group>"; };
 		EF2C84582C6B979600C7BE58 /* GroceryListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2C845B2C6B979600C7BE58 /* GroceryListAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListAppApp.swift; sourceTree = "<group>"; };
 		EF2C845D2C6B979600C7BE58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +87,7 @@
 		EF8B1FCF2C99B6B000F18D9D /* CreateGroceryListModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateGroceryListModal.swift; path = "../../../../../Library/Mobile Documents/.Trash/CreateGroceryListModal.swift"; sourceTree = "<group>"; };
 		EF8B1FD52CA2F8F100F18D9D /* GroceryListDetailModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListDetailModal.swift; sourceTree = "<group>"; };
 		EF8B1FD72CA3129E00F18D9D /* GroceryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryList.swift; sourceTree = "<group>"; };
+		EF8B1FDA2CA5A10200F18D9D /* AdaptsToKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptsToKeyboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +140,7 @@
 		EF2C845A2C6B979600C7BE58 /* GroceryListApp */ = {
 			isa = PBXGroup;
 			children = (
+				EF8B1FD92CA5A0E300F18D9D /* Utilities */,
 				EF2C84882C6B9ADF00C7BE58 /* Other */,
 				EF2C84872C6B9AD400C7BE58 /* Models */,
 				EF2C84862C6B9AAB00C7BE58 /* ViewModels */,
@@ -200,7 +201,6 @@
 				EF2C84912C6E396B00C7BE58 /* GroceryListViewModel.swift */,
 				EF2C848D2C6E34DF00C7BE58 /* ContentViewModel.swift */,
 				EF2C84AC2C777A8700C7BE58 /* HomeViewModel.swift */,
-				EF0E4DDA2C83E69A00E470BF /* CreateGroceryListViewModel.swift */,
 				EF8B1FCD2C87951500F18D9D /* ProfileViewModel.swift */,
 			);
 			path = ViewModels;
@@ -224,6 +224,14 @@
 				EF2C84A82C7655A900C7BE58 /* Extensions.swift */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		EF8B1FD92CA5A0E300F18D9D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EF8B1FDA2CA5A10200F18D9D /* AdaptsToKeyboard.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,6 +380,7 @@
 				EF2C84902C6E395E00C7BE58 /* GroceryListScreen.swift in Sources */,
 				EF2C84922C6E396B00C7BE58 /* GroceryListViewModel.swift in Sources */,
 				EF8B1FD02C99B6B000F18D9D /* CreateGroceryListModal.swift in Sources */,
+				EF8B1FDB2CA5A10200F18D9D /* AdaptsToKeyboard.swift in Sources */,
 				EF2C845E2C6B979600C7BE58 /* ContentView.swift in Sources */,
 				EF2C84982C6E39AB00C7BE58 /* HeaderView.swift in Sources */,
 				EF2C84942C6E398400C7BE58 /* RegisterScreen.swift in Sources */,
@@ -384,7 +393,6 @@
 				EF8B1FD82CA3129E00F18D9D /* GroceryList.swift in Sources */,
 				EF2C84962C6E398F00C7BE58 /* RegisterViewModel.swift in Sources */,
 				EF2C84AD2C777A8700C7BE58 /* HomeViewModel.swift in Sources */,
-				EF0E4DDB2C83E69A00E470BF /* CreateGroceryListViewModel.swift in Sources */,
 				EF2C848E2C6E34DF00C7BE58 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

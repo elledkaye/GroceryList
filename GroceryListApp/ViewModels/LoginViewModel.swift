@@ -1,5 +1,5 @@
 /*
- Reminder: ViewModel envapsulates presentation login and state.
+ Reminder: ViewModel encapsulates presentation login and state.
  ViewModels contain the business logic and handle data transformations need for the
  the views to display data correctly
  
@@ -75,10 +75,7 @@ class LoginViewModel: ObservableObject{
         
         return true
         
-        
     }// End of validateEmail
-    
-    
     
     // Function validatePassowrd)
     func validatePassword() -> Bool{
