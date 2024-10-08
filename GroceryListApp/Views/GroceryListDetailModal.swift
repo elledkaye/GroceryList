@@ -1,3 +1,15 @@
+/*
+ Notes:
+ - Cancel button nno longer works could be due to how the .sheet(item:) modifier behaves when used with an option item like selectedGroceryList
+ 
+ -When using .sheet(item:) the modal is presented based on the non-nil value of the bound item (in this case, selectedGroceryList)
+ 
+ -To dismiss the modal you need to set selectedGroceryList back to nil, since .sheet(item:) relies on whether the bound item is non-nil or nil to control it's visibility
+ 
+ -Currently isPresented is set to false in my cancel button, but because the modal is bound to selectedGroceryList, the modal won't close unless selectedGroceryList is set to nil
+ 
+ */
+
 import SwiftUI
 
 struct GroceryListDetailModal: View {
@@ -8,8 +20,11 @@ struct GroceryListDetailModal: View {
     @Binding var isPresented: Bool
     
     
-    // The selected grocery list to display details
+    // The grocery list object that is being displayed
     var groceryList: GroceryList
+    
+    // Add a closure for dismissing the modal
+    var dismissAction:() -> Void
     
     
     var body: some View {
@@ -29,9 +44,9 @@ struct GroceryListDetailModal: View {
                 Spacer()
                 
             }// End of VStack
-            
+            .navigationBarItems(trailing: Image(systemName: "plus"))
             .navigationBarItems(leading: Button("Cancel"){
-                isPresented = false
+               dismissAction()
                 
             })
             
@@ -45,5 +60,5 @@ struct GroceryListDetailModal: View {
 }
 
 #Preview {
-    GroceryListDetailModal(isPresented: .constant(true), groceryList:GroceryList(name: "Sample List", items:["Bananas", "Bread"]))
+    GroceryListDetailModal(isPresented: .constant(true), groceryList:GroceryList(name: "Sample List", items:["Bananas", "Bread"]), dismissAction:{})
 }

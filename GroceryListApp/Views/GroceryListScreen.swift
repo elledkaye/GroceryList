@@ -95,7 +95,7 @@ struct GroceryListScreen: View {
         
         // Sheet for displaying GroceryListDetailView
         .sheet(item: $selectedGroceryList){ groceryList in
-            GroceryListDetailModal(isPresented:$isPresentedDetailView, groceryList: groceryList)
+            GroceryListDetailModal(isPresented:$isPresentedDetailView, groceryList: groceryList, dismissAction: {selectedGroceryList = nil})
         }
         
         
