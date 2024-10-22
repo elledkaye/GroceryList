@@ -63,7 +63,7 @@ struct LoginScreen: View {
                 .padding(.bottom)
              
             } // End of VStack
-            .border(Color.blue, width:3)// REMOVE
+            
             
         } // End of NavigationView
         .padding(.bottom)

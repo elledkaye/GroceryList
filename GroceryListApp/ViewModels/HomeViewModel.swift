@@ -36,7 +36,7 @@ class HomeViewModel: ObservableObject{
             // If there are documents unwrap and assign to variable documents
             // Iterate through and extract the name
             if let documents = snapshot?.documents{
-                self?.groceryLists = documents.compactMap{ $0["name"] as? String }
+                self?.groceryLists = documents.compactMap{ $0["groceryListName"] as? String }
             }
             
         }

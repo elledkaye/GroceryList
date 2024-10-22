@@ -20,7 +20,7 @@ import SwiftUI
 import FirebaseAuth
 
 struct HomeScreen: View {
-    @StateObject private var viewModel = HomeViewModel()
+    //@StateObject private var viewModel = HomeViewModel()
     @State var userId: String?
    // @State var isPresentingCreateGroceryListScreen = false
     
