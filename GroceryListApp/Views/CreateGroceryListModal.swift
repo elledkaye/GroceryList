@@ -3,12 +3,12 @@
 import SwiftUI
 
 struct CreateGroceryListModal: View {
-    @StateObject var viewModel = CreateGroceryListViewModel()
+  
     @State var newItem: String = "" // For adding items dynamically
     
     @Binding var isPresented: Bool // Binding to control when to show/hide modal
     @Binding var newListName: String // Binding to the new list name
-    @Binding var newItems: [String] // Binding to the new items for the list
+    @Binding var newItems: [ListItem] // Binding to the new items for the list
     
     var saveAction:() -> Void // Closure to handle saving the list
     
@@ -22,7 +22,7 @@ struct CreateGroceryListModal: View {
                 List{
                     ForEach(newItems, id: \.self){
                         item in
-                        Text(item)
+                        Text(item.itemName)
                     }
                     //.ondelete
                 }
@@ -33,7 +33,7 @@ struct CreateGroceryListModal: View {
                     
                     Button(action: {
                         if !newItem.isEmpty{
-                            newItems.append(newItem)
+                            newItems.append(ListItem(itemName: newItem))
                             newItem = ""
                         }
                         

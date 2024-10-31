@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF0D26F62CD3CB5C00122DC6 /* CreateGroceryListModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0D26F52CD3CB5C00122DC6 /* CreateGroceryListModal.swift */; };
 		EF2C845C2C6B979600C7BE58 /* GroceryListAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C845B2C6B979600C7BE58 /* GroceryListAppApp.swift */; };
 		EF2C845E2C6B979600C7BE58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C845D2C6B979600C7BE58 /* ContentView.swift */; };
 		EF2C84602C6B979700C7BE58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF2C845F2C6B979700C7BE58 /* Assets.xcassets */; };
@@ -33,7 +34,6 @@
 		EF2C84AF2C777D6C00C7BE58 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84AE2C777D6C00C7BE58 /* SettingsScreen.swift */; };
 		EF8B1FCC2C87950900F18D9D /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8B1FCB2C87950900F18D9D /* ProfileScreen.swift */; };
 		EF8B1FCE2C87951500F18D9D /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8B1FCD2C87951500F18D9D /* ProfileViewModel.swift */; };
-		EF8B1FD02C99B6B000F18D9D /* CreateGroceryListModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8B1FCF2C99B6B000F18D9D /* CreateGroceryListModal.swift */; };
 		EF8B1FD62CA2F8F100F18D9D /* GroceryListDetailModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8B1FD52CA2F8F100F18D9D /* GroceryListDetailModal.swift */; };
 		EF8B1FD82CA3129E00F18D9D /* GroceryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8B1FD72CA3129E00F18D9D /* GroceryList.swift */; };
 		EF8B1FDB2CA5A10200F18D9D /* AdaptsToKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8B1FDA2CA5A10200F18D9D /* AdaptsToKeyboard.swift */; };
@@ -57,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF0D26F52CD3CB5C00122DC6 /* CreateGroceryListModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroceryListModal.swift; sourceTree = "<group>"; };
 		EF2C84582C6B979600C7BE58 /* GroceryListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2C845B2C6B979600C7BE58 /* GroceryListAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListAppApp.swift; sourceTree = "<group>"; };
 		EF2C845D2C6B979600C7BE58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,7 +85,6 @@
 		EF2C84AE2C777D6C00C7BE58 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		EF8B1FCB2C87950900F18D9D /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		EF8B1FCD2C87951500F18D9D /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
-		EF8B1FCF2C99B6B000F18D9D /* CreateGroceryListModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateGroceryListModal.swift; path = "../../../../../Library/Mobile Documents/.Trash/CreateGroceryListModal.swift"; sourceTree = "<group>"; };
 		EF8B1FD52CA2F8F100F18D9D /* GroceryListDetailModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListDetailModal.swift; sourceTree = "<group>"; };
 		EF8B1FD72CA3129E00F18D9D /* GroceryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryList.swift; sourceTree = "<group>"; };
 		EF8B1FDA2CA5A10200F18D9D /* AdaptsToKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptsToKeyboard.swift; sourceTree = "<group>"; };
@@ -181,8 +181,8 @@
 				EF2C845D2C6B979600C7BE58 /* ContentView.swift */,
 				EF2C84932C6E398400C7BE58 /* RegisterScreen.swift */,
 				EF2C84892C6E2AD700C7BE58 /* LoginScreen.swift */,
-				EF8B1FCF2C99B6B000F18D9D /* CreateGroceryListModal.swift */,
 				EF2C848F2C6E395E00C7BE58 /* GroceryListScreen.swift */,
+				EF0D26F52CD3CB5C00122DC6 /* CreateGroceryListModal.swift */,
 				EF2C84972C6E39AB00C7BE58 /* HeaderView.swift */,
 				EF2C84992C6F7E1D00C7BE58 /* GLButton.swift */,
 				EF2C84AA2C777A7600C7BE58 /* HomeScreen.swift */,
@@ -379,7 +379,6 @@
 				EF2C848A2C6E2AD700C7BE58 /* LoginScreen.swift in Sources */,
 				EF2C84902C6E395E00C7BE58 /* GroceryListScreen.swift in Sources */,
 				EF2C84922C6E396B00C7BE58 /* GroceryListViewModel.swift in Sources */,
-				EF8B1FD02C99B6B000F18D9D /* CreateGroceryListModal.swift in Sources */,
 				EF8B1FDB2CA5A10200F18D9D /* AdaptsToKeyboard.swift in Sources */,
 				EF2C845E2C6B979600C7BE58 /* ContentView.swift in Sources */,
 				EF2C84982C6E39AB00C7BE58 /* HeaderView.swift in Sources */,
@@ -394,6 +393,7 @@
 				EF2C84962C6E398F00C7BE58 /* RegisterViewModel.swift in Sources */,
 				EF2C84AD2C777A8700C7BE58 /* HomeViewModel.swift in Sources */,
 				EF2C848E2C6E34DF00C7BE58 /* ContentViewModel.swift in Sources */,
+				EF0D26F62CD3CB5C00122DC6 /* CreateGroceryListModal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
