@@ -22,7 +22,6 @@ struct GroceryListScreen: View {
     // Tracks items being added to a new grocery list
     @State var newGroceryItems: [ListItem] = []
     
-    
     // Tracks which grocery list is selected
     @State var selectedGroceryList: GroceryList? = nil
     
@@ -49,11 +48,12 @@ struct GroceryListScreen: View {
                         // if the user selects a list we then want to open the detailModal
                         // within the detailModal we display the list of items
                     
-            
+        
                     else {
                         List(viewModel.userGroceryLists) { groceryList in
                             // Each grocery list name is wrapped in a Button that calls openGroceryList
                             Button(action:{
+                                // Calling fuction openGroceryList and passing in the current groceryList item
                                 openGroceryList(groceryList)
                             }){
                                 
@@ -84,13 +84,13 @@ struct GroceryListScreen: View {
                     }
                 }
 
-                ToolbarItem(placement: .navigationBarLeading) {
+               /* ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: {
                         // Action goes here
                     }) {
                         Image(systemName: "square.and.arrow.up")
                     }
-                }
+                } */
             }
             .navigationBarTitleDisplayMode(.inline)
             .navigationTitle("Home")
@@ -110,7 +110,9 @@ struct GroceryListScreen: View {
         
         // Sheet for displaying GroceryListDetailView
         .sheet(item: $selectedGroceryList){ groceryList in
-            GroceryListDetailModal(isPresented:$isPresentedDetailView, groceryList: groceryList, dismissAction: {selectedGroceryList = nil})
+            GroceryListDetailModal(isPresented:$isPresentedDetailView,
+                                   groceryList: groceryList,
+                                   dismissAction: {selectedGroceryList = nil})
         }
         
         

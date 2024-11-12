@@ -64,7 +64,7 @@ class GroceryListViewModel: ObservableObject{
         // for loop, for each
         //var groceryListItems :  [ListItem] = []
         
-        //Array
+        // We declare a variable named greoceryList and assign it an instance of the GroceryList struct
         var groceryList: GroceryList = GroceryList(groceryListName: name, items: items)
         
         

@@ -12,6 +12,8 @@
 
 import SwiftUI
 
+import Firebase
+
 struct GroceryListDetailModal: View {
     // Binding to control when to show/hide modal
     @Binding var isPresented: Bool
@@ -20,7 +22,10 @@ struct GroceryListDetailModal: View {
     @State var newGroceryListItem: String = ""
     
     // The grocery list object that is being displayed
-    var groceryList: GroceryList
+    // var groceryList: GroceryList
+    // -> Change groceryList from a regular variable to a binding
+    @Binding var groceryList: GroceryList
+    
     
     // Add a closure for dismissing the modal
     var dismissAction:() -> Void
@@ -42,6 +47,9 @@ struct GroceryListDetailModal: View {
                             Button("Delete"){
                                 // Action here
                                 // When we delete an item we want to mutate the array of items of items
+                                // Call function to delete item
+                                // Passing item to function deleteGroceryListItem
+                                deleteGroceryListItem(item)
                                 
                             }
                             .tint(.red)
@@ -80,9 +88,41 @@ struct GroceryListDetailModal: View {
     func addNewGroceryListItem(){
         
     }
+    
+    // We need to remove the grocerylist item at the index array
+    // we need to remove the item also from firebase
+    // show the changes on the UI
+    
+    // Needs to take in an item parameter
+    func deleteGroceryListItem(_ item:ListItem){
+        
+        let db = Firestore.firestore()
+        
+        let listRef = db.collection("groceryLists").document(groceryList.id)
+        let itemRef = listRef.collection("items").document(item.id)
+        
+        itemRef.delete{
+            error in
+            if let error = error{
+                print("Error removing item: \(error).localizedDescription")
+            }else{
+                print("Item successfully removed")
+                
+                if let index = groceryList.items.firstIndex(where:{
+                    $0.id == item.id}){
+                    groceryList.items.remove(at: index)
+                }
+            }
+        }
+        
+        
+        
+    }
 }
 
 #Preview {
-    GroceryListDetailModal(isPresented: .constant(true), groceryList:GroceryList(groceryListName: "Sample List", items:[ListItem(itemName:"listItem")]), dismissAction:{})
+    GroceryListDetailModal(
+        isPresented: .constant(true), groceryList:.constant(GroceryList(groceryListName: "Sample List", items:[ListItem(itemName:"listItem")]))
+        , dismissAction:{})
 }
 

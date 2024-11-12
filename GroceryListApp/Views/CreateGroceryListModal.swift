@@ -24,7 +24,7 @@ struct CreateGroceryListModal: View {
                         item in
                         Text(item.itemName)
                     }
-                    //.ondelete
+                   
                 }
                 
                 HStack{
