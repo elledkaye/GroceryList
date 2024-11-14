@@ -61,9 +61,9 @@ struct CreateGroceryListModal: View {
         }
     }
     
-    private func removeItem(at offsets: IndexSet){
+  /*  private func removeItem(at offsets: IndexSet){
         newItems.remove(atOffsets: offsets)
-    }
+    }*/
 }
 
 #Preview {

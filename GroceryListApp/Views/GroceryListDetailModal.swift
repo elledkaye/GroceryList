@@ -34,10 +34,10 @@ struct GroceryListDetailModal: View {
     var body: some View {
         NavigationView{
             VStack{
-               
-               Text("Remove or add items")
                 
-    
+                Text("Remove or add items")
+                
+                
                 //Load grocery list here
                 List(groceryList.items, id:\.self){
                     
@@ -115,14 +115,12 @@ struct GroceryListDetailModal: View {
             }
         }
         
-        
-        
     }
 }
 
 #Preview {
     GroceryListDetailModal(
-        isPresented: .constant(true), groceryList:.constant(GroceryList(groceryListName: "Sample List", items:[ListItem(itemName:"listItem")]))
+        isPresented: .constant(true), groceryList:Binding.constant(GroceryList(groceryListName: "Sample List", items:[ListItem(itemName:"listItem")]))
         , dismissAction:{})
 }
 

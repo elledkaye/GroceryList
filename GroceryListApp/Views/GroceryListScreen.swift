@@ -109,11 +109,11 @@ struct GroceryListScreen: View {
         
         
         // Sheet for displaying GroceryListDetailView
-     /* .sheet(item: $selectedGroceryList){ groceryList in
+      .sheet(item: $selectedGroceryList){ groceryList in
             GroceryListDetailModal(isPresented:$isPresentedDetailView,
-                                   groceryList: groceryList,
+                                   groceryList:Binding.constant(groceryList),
                                    dismissAction: {selectedGroceryList = nil})
-        }*/
+        }
         
         
     }
@@ -136,6 +136,9 @@ struct GroceryListScreen: View {
 }
 
 
+// Note if you have this you should be able to see a preview
+
+// If you don't see the preview check to make sure 'Canvas' is checked
 #Preview {
     GroceryListScreen()
 }
