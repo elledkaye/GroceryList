@@ -226,6 +226,36 @@
             endingLineNumber = "111"
             landmarkName = "deleteGroceryListItem(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2D0E541E-F848-4D40-85CC-C72DA4927893 - 10725f92d45bb2e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GroceryListApp.GroceryListDetailModal.deleteGroceryListItem(GroceryListApp.ListItem) -&gt; ()"
+                  moduleName = "GroceryListApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/daniellekaye/Desktop/GroceryListAppiOS/GroceryList/GroceryListApp/Views/GroceryListDetailModal.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111">
+               </Location>
+               <Location
+                  uuid = "2D0E541E-F848-4D40-85CC-C72DA4927893 - 58ee845e8ecf8901"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (GroceryListApp.ListItem) -&gt; Swift.Bool in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GroceryListApp.GroceryListDetailModal.deleteGroceryListItem(GroceryListApp.ListItem) -&gt; ()"
+                  moduleName = "GroceryListApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/daniellekaye/Desktop/GroceryListAppiOS/GroceryList/GroceryListApp/Views/GroceryListDetailModal.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -242,6 +272,22 @@
             endingLineNumber = "9"
             landmarkName = "unknown"
             landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "084515E8-821D-43DD-B241-3350FE8BB858"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GroceryListApp/Views/GroceryListScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

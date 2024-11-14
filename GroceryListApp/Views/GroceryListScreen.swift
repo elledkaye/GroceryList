@@ -109,11 +109,11 @@ struct GroceryListScreen: View {
         
         
         // Sheet for displaying GroceryListDetailView
-        .sheet(item: $selectedGroceryList){ groceryList in
+     /* .sheet(item: $selectedGroceryList){ groceryList in
             GroceryListDetailModal(isPresented:$isPresentedDetailView,
                                    groceryList: groceryList,
                                    dismissAction: {selectedGroceryList = nil})
-        }
+        }*/
         
         
     }
