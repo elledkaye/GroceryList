@@ -22,6 +22,7 @@ struct GLButton: View {
                     .fill(background)
                     .shadow(color: darkShadow, radius: 10, x: 10, y: 10) // Dark shadow
                     .shadow(color: lightShadow, radius: 10, x: -5, y: -5) // Light shadow
+                  
                 
                 
                 Text(title)
