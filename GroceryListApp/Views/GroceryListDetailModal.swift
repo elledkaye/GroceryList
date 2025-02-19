@@ -16,6 +16,7 @@ struct GroceryListDetailModal: View {
     // Binding to control when to show/hide modal
     @Binding var isPresented: Bool
     
+    
     // Variable for new groceryItem
     @State var newGroceryListItem: String = ""
     
@@ -31,8 +32,6 @@ struct GroceryListDetailModal: View {
             VStack{
                
                Text("Remove or add items")
-                
-    
                 //Load grocery list here
                 List(groceryList.items, id:\.self){
                     
@@ -77,8 +76,30 @@ struct GroceryListDetailModal: View {
     } // End of view
     
     // Function to add new items to existing list and the list that is currently opened
-    func addNewGroceryListItem(){
+    mutating func addNewGroceryListItem(){
         
+        /*
+         If grocery list is not empty, generate a new listItem
+         */
+        guard !newGroceryListItem.isEmpty else {
+            // Return IF groceryListItem IS EMPTY
+            // Otherwise move onto the next set of code
+            print("GroceryListItem IS EMPTY")
+            return
+        }
+        // Generate a new ListItem
+        // creating a new item
+        // declare a new variable called new item
+        // Assigning ListItem object with id and an item nane
+        
+        let newItem = ListItem(itemName: newGroceryListItem)
+                               
+        
+        
+        // We need to add it locally
+        groceryList.items.append(newItem)
+        
+
     }
 }
 
