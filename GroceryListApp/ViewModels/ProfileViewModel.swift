@@ -9,11 +9,4 @@ import Foundation
 class ProfileViewModel: ObservableObject{
     @Published var user: User? = nil
     
-
-    
-    
-    
-    
-    
-    
 }

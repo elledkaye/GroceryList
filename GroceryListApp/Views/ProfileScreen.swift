@@ -1,5 +1,6 @@
 
 import SwiftUI
+import FirebaseAuth
 
 struct ProfileScreen: View {
     @StateObject var viewModel = ProfileViewModel()
@@ -12,9 +13,13 @@ struct ProfileScreen: View {
                 
                 VStack{
                     Text("Dislay User info")
-                    
-                    
-                    
+                    GLButton(title: "Logout", background: Color.green){
+                        // Action of logging in goes here
+                        logout()
+                    }
+                    .padding(.bottom) // Padding for button
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 50)
+            
                 }
                 
                 
@@ -51,6 +56,21 @@ struct ProfileScreen: View {
             .padding()
             
         } // End of Navigation view
+    }
+    
+    func logout(){
+        let firebaseAuth = Auth.auth()
+        do{
+            try firebaseAuth.signOut()
+            print("User successfully Signed out")
+          
+            
+        }catch let signOutError as NSError{
+            print("Error signing out: %@ \(signOutError.localizedDescription)")
+            
+        }
+        
+        
     }
 }
 

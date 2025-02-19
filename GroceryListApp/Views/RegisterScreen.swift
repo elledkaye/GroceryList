@@ -53,20 +53,7 @@ struct RegisterScreen: View {
                         
                     }
                     
-                   /* .alert(isPresented: $viewModel.registrationSuccessful) {
-                        Alert(title: Text("Success"),
-                              message: Text("Registration successful!"),
-                              dismissButton: .default(Text("OK"),
-                              action:{
-                            shouldNavigateToHomeScreen = true
-                            
-                        }))
-                        
-                    }*/
-                    
-                              
-                    
-                    
+    
                 } // End of register form
                 
                 .offset(y: -50)
